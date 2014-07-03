@@ -1,0 +1,103 @@
+/*
+   stylesheet for publist classes
+   
+   included as part of publist and released under the GPL
+*/
+
+.publist li {
+	padding-bottom: 1em;
+}
+
+.publistheader {
+	font-family: Bitstream Vera Sans, Verdana, sans serif;
+	font-size: 120%;
+	padding-top: 1em;
+}
+
+.linkheader {
+	font-weight: bold;
+}
+
+.publistcredit {
+	font-family: Bitstream Vera Sans, Verdana, sans serif;
+	font-size: 80%;
+	color: #666666;
+}
+
+.publistcredit A {
+	color: #6666ff;
+}
+
+.publinks {
+}
+
+.newpubmarker {
+  float: left;
+  margin: 0 0.2em 0.2em 0;
+}
+
+.publistabstract {
+	padding: 0 2em 0 2em;  
+}
+
+.publistsorts {
+  float: right; 
+/*  position: fixed;
+  top: 2em;
+  right: 0em;*/
+  margin: 0 0 1em 1em;
+/*   padding: 0.7em; */
+  border: 1px solid #333366;
+  background: #ccccee;
+  padding: 0;
+}
+
+.publistsorts ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.2em;
+  list-style: none;
+}
+
+.publistsorts h3 {
+  font-size: 100%;
+  padding: 0.7em;
+  padding-bottom: 0.2em;
+  margin: 0;
+}
+
+.publistsorts li {
+  margin: 0;
+  padding: 0;
+}
+
+.publistsorts li a {
+  color: #000033;
+  display: block;
+  margin: 0;
+  padding: 0.2em 0.7em 0.2em 0.7em;
+  text-decoration: none;
+}
+
+.publistsorts li a:hover, .publistsorts li a:active {
+  color: #fcffd5;
+  background: #333366;
+}
+
+.publistjumps ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 0.5em;
+  list-style: none;
+}
+
+.publistjumps li {
+  list-style: none;
+  display: inline;
+  margin-right: 0.5em;
+  white-space: nowrap;
+}
+
+.publistjumps a {
+  color: #3333ff;
+}

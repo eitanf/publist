@@ -1,7 +1,7 @@
 <?php
 /*
  *  PubType: Object for Publication types
- *  Copyright 2005 by Eitan Frachtenberg (etc_26@yahoo.com)
+ *  Copyright 2005--2014 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 
@@ -44,10 +44,18 @@ class PubType {
 	// Note: format array cannot have more than one publication attribute
 	// %attrib% per array element, although an attribute may be repeated.
 	function default_format () {
-		$elems = array ('%new% ', '%author%. ', '<b>%title%</b>. ',
-			'In ', '%editor% (eds.): ', '<i>%booktitle%</i>', 
-			' %volume%', '(%number%)', ': %pages%', ', %address%', 
-			', %date%.', ' %note%.');
+		$elems = array ('%new% ',
+                                '<span class=\'author\'>%author%</span>. ',
+                                '<span class=\'title\'>%title%</span>. ',
+			        'In ',
+                                '<span class=\'editor\'>%editor%</span> (eds.): ',
+                                '<span class=\'booktitle\'>%booktitle%</span>',
+			        '<span class=\'volume\'> %volume%</span>',
+                                '(</span class=\'number\'>%number%</span>)',
+                                ': <span class=\'pages\'>%pages%</span>',
+                                ', <span class=\'address\'>%address%</span>',
+			        ', <span class=\'date\'>%date%</span>.',
+                                '<span class=\note\'> %note%</span>.');
 
 		return implode ($elems, '|');
 	}

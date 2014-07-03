@@ -1,7 +1,7 @@
 <?php
 /*
  *  PubConfig: Object for Publist's configuration management
- *  Copyright 2005 by Eitan Frachtenberg (publist@frachtenberg.org)
+ *  Copyright 2005--2014 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 

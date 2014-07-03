@@ -1,7 +1,7 @@
 <?php
 /*
  *  Publist: Object for list of publications
- *  Copyright 2003, 2004, 2005 by Eitan Frachtenberg (etc_26@yahoo.com)
+ *  Copyright 2003--2014 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 
@@ -259,7 +259,7 @@ class Publist {
 		return  '<a href="http://publist.sf.net/">Publist</a> '
 			     .'v. <a href="http://sf.net/projects/publist/">'. PUBLIST_VERSION ."</a>\n"
 			     ."<!-- Generated automatically with Publist (c) 2003-2013 version "
-			     .PUBLIST_VERSION.", by Eitan Frachtenberg (etc_26@yahoo.com) -->\n";
+			     .PUBLIST_VERSION.", by Eitan Frachtenberg (publist@frachtenberg.org) -->\n";
 	}
 
 ################################################
@@ -293,7 +293,7 @@ class Publist {
 ################################################
 	///// Display partial publication list, based on regular expression match to the author list 
 	// Note dependency on sort type for is_visible: initialize Publist accordingly!
-	// Additionally, no headers are used (so print_header not called) !!!FIXME: Is this a bug?
+	// Additionally, no headers are used (so print_header not called)
 	function print_select_author ($pattern) {
 		print $this->config->get ("Formatting", "liststart", "<ul>");
 		foreach ($this->pubs as $p) {
@@ -309,7 +309,7 @@ class Publist {
 ################################################
 	///// Display partial publication list, based on selection criteria (after sorting)
 	// Note dependency on sort type for is_visible: initialize Publist accordingly!
-	// Additionally, no headers are used (so print_header not called) !!!FIXME: Is this a bug?
+	// Additionally, no headers are used (so print_header not called)
 
 	function print_select_generic ($func) {
 		print $this->config->get ("Formatting", "liststart", "<ul>");

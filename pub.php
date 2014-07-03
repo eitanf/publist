@@ -1,7 +1,7 @@
 <?php
 /*
  *  Publication object, handles an individual publication
- *  Copyright 2003, 2004, 2005 by Eitan Frachtenberg (etc_26@yahoo.com)
+ *  Copyright 2003--2014 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 

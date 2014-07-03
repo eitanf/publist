@@ -8,7 +8,7 @@
 # continue to output unparsed lines in HTML comment format, to be edited 
 # in-place
 # Output is left at the same order as the input.
-# Note - if your BibTeX depends on additional files (e.g. macros), make sure
+# Note - if your BibTeX depends on additional files (e.g., macros), make sure
 # to include them first in your input order. This script will try to deal
 # with @Strings and will also try to convert months to the proper numeric value.
 # 
@@ -31,7 +31,7 @@
 # Requires package Text::BibTeX
 #    (http://search.cpan.org/~gward/Text-BibTeX-0.34/BibTeX.pm)
 #
-# Copyright 2005 by Eitan Frachtenberg (etc_26@yahoo.com) -- BETA status --
+# Copyright 2005--2014 by Eitan Frachtenberg (publist@frachtenber.org) -- BETA status --
 # This program may be freely distributed under the terms of the GNU Public License
 ###############################################################################
 
