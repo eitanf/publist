@@ -32,8 +32,8 @@
 }
 
 .newpubmarker {
-  float: left;
-  margin: 0 0.2em 0.2em 0;
+	float: left;
+	margin: 0 0.2em 0.2em 0;
 }
 
 .publistabstract {
@@ -41,63 +41,73 @@
 }
 
 .publistsorts {
-  float: right; 
-/*  position: fixed;
-  top: 2em;
-  right: 0em;*/
-  margin: 0 0 1em 1em;
-/*   padding: 0.7em; */
-  border: 1px solid #333366;
-  background: #ccccee;
-  padding: 0;
+	float: right;
+/*	position: fixed;
+	top: 2em;
+	right: 0em;*/
+	margin: 0 0 1em 1em;
+/*	padding: 0.7em; */
+	border: 1px solid #333366;
+	background: #ccccee;
+	padding: 0;
 }
 
 .publistsorts ul {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 0.2em;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.2em;
+	list-style: none;
 }
 
 .publistsorts h3 {
-  font-size: 100%;
-  padding: 0.7em;
-  padding-bottom: 0.2em;
-  margin: 0;
+	font-size: 100%;
+	padding: 0.7em;
+	padding-bottom: 0.2em;
+	margin: 0;
 }
 
 .publistsorts li {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .publistsorts li a {
-  color: #000033;
-  display: block;
-  margin: 0;
-  padding: 0.2em 0.7em 0.2em 0.7em;
-  text-decoration: none;
+	color: #000033;
+	display: block;
+	margin: 0;
+	padding: 0.2em 0.7em 0.2em 0.7em;
+	text-decoration: none;
 }
 
 .publistsorts li a:hover, .publistsorts li a:active {
-  color: #fcffd5;
-  background: #333366;
+	color: #fcffd5;
+	background: #333366;
 }
 
 .publistjumps ul {
-  margin: 0;
-  padding: 0;
-  margin-left: 0.5em;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 0.5em;
+	list-style: none;
 }
 
 .publistjumps li {
-  list-style: none;
-  display: inline;
-  margin-right: 0.5em;
-  white-space: nowrap;
+	list-style: none;
+	display: inline;
+	margin-right: 0.5em;
+	white-space: nowrap;
 }
 
 .publistjumps a {
-  color: #3333ff;
+	color: #3333ff;
+}
+
+cite.title {
+	font-style: normal;
+	font-weight: bold;
+}
+
+address.location {
+        display: inline;
+	font-style: normal;
 }
