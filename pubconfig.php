@@ -88,6 +88,13 @@ class PubConfig {
 		if (! count($types))
 			die ("Critical error: no types defined in configuration file\n");
 
+		$default_format = "";
+		if (isset($this->options['Formatting']['default_format']) && !empty($this->options['Formatting']['default_format'])) {
+			$default_format = $this->options['Formatting']['default_format'];
+		} else {
+			$default_format = "";
+		}
+
 		foreach ($types as $type) {
 			$ltype = "Type_$type";
 			if (strstr ($this->type_names, $type)) {
@@ -142,7 +149,7 @@ class PubConfig {
 				$bibtex = $pdata["bibtex"];
 
 			if (!isset ($pdata["format"]))
-				$format = "";
+				$format = $default_format;
 			else
 				$format = $pdata["format"];
 
