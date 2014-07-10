@@ -247,18 +247,18 @@ class Publist {
 		if (!$this->config->get ("Content", "show_version", true))
 			return;
 
-		print "<div class='publistcredit'>"
+		print "<div class='publistcredit'><small>"
 		     ."List generated automatically with "
 		     .$this->get_link_home()
-		     ."</div>\n";
+		     ."</small></div>\n";
 	}
 
 ################################################
 	///// Actually print the credits 
 	function get_link_home() {
-		return  '<a href="http://publist.sf.net/">Publist</a> '
-			     .'v. <a href="http://sf.net/projects/publist/">'. PUBLIST_VERSION ."</a>\n"
-			     ."<!-- Generated automatically with Publist (c) 2003-2013 version "
+		return  '<small><a class="link_home" href="http://publist.sf.net/">Publist</a> '
+			     .'v. <a href="http://sf.net/projects/publist/">'. PUBLIST_VERSION ."</a></small>\n"
+			     ."<!-- Generated automatically with Publist (c) 2003-2014 version "
 			     .PUBLIST_VERSION.", by Eitan Frachtenberg (publist@frachtenberg.org) -->\n";
 	}
 
