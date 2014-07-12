@@ -220,7 +220,7 @@ class Publication {
 		}
 		// only create the link if something was found to link to
 		if ($url !== '') {
-			return "<a href='$url'>$text</a>"
+			return "<a class='download' data-filename='$url' href='$url'>$text</a>"
 			        . ($filesource ? $this->format_file_type ($config, $files[0]) : '');
 		} else {
 			return "";
