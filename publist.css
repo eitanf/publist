@@ -111,3 +111,9 @@ address.location {
         display: inline;
 	font-style: normal;
 }
+
+details.abstract {
+	display: inline;
+	color: green;
+}
+

@@ -220,8 +220,13 @@ class Publication {
 		}
 		// only create the link if something was found to link to
 		if ($url !== '') {
-			return "<a class='download' data-filename='$url' href='$url'>$text</a>"
-			        . ($filesource ? $this->format_file_type ($config, $files[0]) : '');
+			if ($fileclass == 'abstract') {
+				return "<details class='abstract'><summary>$linkname</summary>"
+                                . file_get_contents($files[0]) . "</details>";
+			} else {
+				return "<a class='download' data-filename='$url' href='$url'>$text</a>"
+				        . ($filesource ? $this->format_file_type ($config, $files[0]) : '');
+			}
 		} else {
 			return "";
 		}
