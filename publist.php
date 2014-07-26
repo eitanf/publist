@@ -172,8 +172,8 @@ class Publist {
 		    $links[] = '<a href="#publist' . $idx . '">'
 			. (isset ($header)? $header : $idx)
 			. "</a>";
-		    $count[$idx]++;
 		}
+                $count[$idx]++;
 	    }
 	}
 	if (count($links)) {
@@ -234,7 +234,7 @@ class Publist {
 	// teamonly determines if only team==true publications are displayed
 
 	function is_visible ($p, $teamonly) {
-	if ($teamonly && !$p->is_team ())
+	if ($teamonly == 'true' && !$p->is_team ())
 	    return false;
 	$type = $p->type->get_name();
 	return (preg_match ("/\b$type\b/", $this->sort["types"]));
