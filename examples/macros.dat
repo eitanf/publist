@@ -1,0 +1,53 @@
+# Example macros file to be used with Publist
+# For usage and information, see http://frachtenberg.org/eitan/publist
+# Copyright 2014- Eitan Frachtenberg
+
+#Handy strings:
+LANL	[[a href="http://www.lanl.gov/"]]Los Alamos National Laboratory[[/a]]
+
+#Journals:
+COMPJ	[[a href="http://comjnl.oxfordjournals.org/"]]The Computer Journal[[/a]]
+TPDS	[[a href="http://www.computer.org/tpds/"]]IEEE Transactions on Parallel and Distributed Systems[[/a]] 
+IEEEC	[[a href="http://www.computer.org/computer/"]]IEEE Computer[[/a]]
+IEEEIC	[[a href="http://www.computer.org/internet/"]]IEEE Internet Computing[[/a]]
+IEEEMICRO	[[a href="http://www.computer.org/micro/"]]IEEE Micro[[/a]]
+IEEETC	[[a href="http://www.computer.org/portal/site/transactions/index.jsp?pageID=tc_home"]]IEEE Transactions on Computers[[/a]]
+IJHPCN	[[a href="http://juliet.stfx.ca/~ijhpcn/"]]International Journal of High Performance Computing and Networking[[/a]]
+JILP	[[a href="http://www.jilp.org/"]]Journal of Instruction-Level Parallelism[[/a]]
+PARCO	[[a href="http://www.elsevier.nl/locate/parco"]]Parallel Computing[[/a]]
+SUSCOM	[[a href="http://www.sciencedirect.com/science/article/pii/S2210537912000248?v=s5"]]Sustainable Computing: Informatics and Systems[[/a]]
+TOCS	[[a href="http://www.acm.org/tocs/"]]ACM Transactions on Computer Systems[[/a]]
+JCC	[[a href="http://www.kluweronline.com/issn/1386-7857"]]Journal of Cluster Computing[[/a]]
+CCPE	[[a href="http://www3.interscience.wiley.com/cgi-bin/jhome/77004395"]]Concurrency and Computation: Practice and Experience[[/a]]
+OIR	[[a href="http://www.emeraldinsight.com/Insight/viewContentItem.do;?contentType=Article&amp;contentId=1796003"]]Online Information Review[[/a]]
+WWWJ	[[a href="http://www.springer.com/computer/journal/11280"]]World Wide Web[[/a]]
+
+#Conferences:
+CAC'02	Workshop on Communication Architecture for Clusters [[a href="http://www.cis.ohio-state.edu/~panda/cac/cac02/"]]CAC'02[[/a]], In conjunction with the International Parallel and Distributed Processing Symposium [[a href="http://www.ipdps.org/ipdps2002/"]]IPDPS'02[[/a]]
+CBP'06	The Second JILP Championship Branch Prediction Competition [[a href="http://camino.rutgers.edu/cbp2/"]]CBP'02[[/a]], In conjunction with The 39th Annual IEEE/ACM International Symposium on Microarchitecture [[a href="http://www.microarch.org/micro39/"]]Micro-39[[/a]]
+CLUSTER'01	IEEE International Conference on Cluster Computing [[a href="http://www.cacr.caltech.edu/cluster2001/"]]Cluster'01[[/a]]
+CLUSTER'02	IEEE International Conference on Cluster Computing [[a href="http://www-unix.mcs.anl.gov/cluster2002/"]]Cluster'02[[/a]]
+EUROPAR'04	Euro-Par [[a href="http://www.di.unipi.it/europar04/"]]Europar'04[[/a]]
+HOTI'01	9th Hot Interconnects conference [[a href="http://www.hoti.org/hoti9_index.html"]]HOTi9[[/a]]
+HOTI'03	11th Hot Interconnects conference [[!--[[a href="http://www.hoti.org/hoti11_index.html"]]--]]HOTi11[[/a]]
+I-SPAN'05	International Symposium on Parallel Architectures, Algorithms, and Networks [[a href="http://sigact.acm.org/ispan05/"]]I-SPAN'05[[/a]]
+ICAC'12	The 9th ACM International Conference on Autonomic Computing [[a href="http://icac2012.cs.fiu.edu/keynotes.shtm"]]ICAC'12[[/a]]
+ICPP'04	International Conference on Parallel Processing [[a href="http://www.ecn.purdue.edu/icpp2004/"]]ICPP'04[[/a]]
+IGCC'11	Second International Green Computing Conference [[a href="http://www.green-conf.org/index.html"]]IGCC'11[[/a]]
+ITHERM'12	13th IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems [[a href="http://www.ithermconference.org/"]]ITHERM'12[[/a]]
+IPDPS'03	International Parallel and Distributed Processing Symposium [[a href="http://www.ipdps.org/ipdps2003/"]]IPDPS'03[[/a]]
+IPDPS'04	International Parallel and Distributed Processing Symposium [[a href="http://www.ipdps.org/ipdps2004/"]]IPDPS'04[[/a]]
+JSSPP'03	9th Workshop on Job Scheduling Strategies for Parallel Processing [[a href="http://www.cs.huji.ac.il/~feit/parsched/parsched03.html"]]JSSPP'03[[/a]], In conjunction with [[a href="http://www-csag.ucsd.edu/HPDC-12/"]]HPDC-12[[/a]] / [[a href="http://www.gridforum.org/"]]GGF-8[[/a]]
+JSSPP'05	11th Workshop on Job Scheduling Strategies for Parallel Processing [[a href="http://www.cs.huji.ac.il/~feit/parsched/parsched05.html"]]JSSPP'05[[/a]], In conjunction with [[a href="http://ics05.csail.mit.edu/"]]ICS-19[[/a]]
+NCA'01	1st IEEE International Symposium on Network Computing and Applications [[a href="http://www.computer.org/cspress/CATALOG/pr01432.htm"]]NCA'01[[/a]]
+OFC'12	IEEE Optical Fiber Communication Conference [[a href="http://www.opticsinfobase.org/abstract.cfm?URI=OFC-2012-OTu1B.4"]]OFC/NFOEC[[/a]]
+PERFORMANCE'14	32nd International Symposium on Computer Performance, Modeling, Measurements, and Evaluation [[a href="http://performance2014.di.unito.it/"]]Performance'14[[/a]]
+SC'11	IEEE/ACM Conference on Supercomputing [[a href="http://www.sc-conference.org/sc2011/"]]SC'11[[/a]]
+SC'02	IEEE/ACM Conference on Supercomputing [[a href="http://www.sc-conference.org/sc2002/"]]SC'02[[/a]]
+SC'03	IEEE/ACM Conference on Supercomputing [[a href="http://www.sc-conference.org/sc2003/"]]SC'03[[/a]]
+SIGMETRICS'12	12th ACM/IFIP Joint Conference on Measurement and Modeling of Computer Systems [[a href="http://www.sigmetrics.org/sigmetrics2012/"]]SIGMETRICS/Performance'12[[/a]]
+SMTPS'05	First Workshop on System Management Tools for Large-Scale Parallel Systems [[a href="http://www.ece.rutgers.edu/~yyzhang/ipdps-ws/"]]SMTPS'05[[/a]]
+SRMCC'01	Workshop on Scheduling and Resource Management for Cluster Computing [[a href="http://www.cis.ohio-state.edu/~saday/srmcc01.html"]]SRMCC'01[[/a]], In conjunction with the International Conference on Parallel Processing [[a href="http://www.cis.ohio-state.edu/~panda/icpp01/"]]ICPP'01[[/a]]
+USENIX'05	Usenix Annual Technical Conference [[a href="http://www.usenix.org/events/usenix05/"]]USENIX'05[[/a]]
+TMS'12	SCS/IEEE Symposium on Theory of Modeling and Simulation [[a href="http://sce.carleton.ca/faculty/wainer/DEVS12/doku.php"]]TMS'12[[/a]]
+WIOSCA'06	Second Workshop on the Interaction between Operating Systems and Computer Architecture [[a href="http://www.ideal.ece.ufl.edu/wiosca/"]]WIOSCA'06[[/a]], In conjunction with [[a href="http://www.ece.neu.edu/conf/isca2006/"]]ISCA-33[[/a]]

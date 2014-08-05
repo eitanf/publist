@@ -1,0 +1,1436 @@
+<pubDB>
+
+<!-- Books  -->
+
+<publication>
+  <key>cirne12:jsspp</key>
+  <type>book</type>
+  <editors>Cirne,Walfredo and Desai, Narayan and Frachtenberg, Eitan and Schwiegelshohn, Uwe</editors>
+  <booktitle>
+    Job Scheduling Strategies for Parallel Processing: 16th International Workshop, JSSPP 2012, Revised Selected Papers (Lecture Notes in Computer Science 7698) 
+  </booktitle>
+  <month>1</month>
+  <year>2013</year>
+  <publisher>Springer-Verlag</publisher>
+  <team>false</team>
+  <isbn>978-3642358661</isbn>
+  <area>Parallel Job Scheduling</area>
+  <subarea>JSSPP</subarea>
+  <notes>
+    Available from [[a href="http://www.springer.com/computer/swe/book/978-3-642-35866-1"]]Springer-Verlag[[/a]] and
+    [[a href="http://www.amazon.com/Scheduling-Strategies-Parallel-Processing-International/dp/3642358667/"]]Amazon[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg10:jsspp</key>
+  <type>book</type>
+  <editors> Frachtenberg, Eitan and Schwiegelshohn, Uwe</editors>
+  <booktitle>
+    Job Scheduling Strategies for Parallel Processing: 15th International Workshop, JSSPP 2010, Revised Selected Papers (Lecture Notes in Computer Science 6253) 
+  </booktitle>
+  <month>10</month>
+  <year>2010</year>
+  <publisher>Springer-Verlag</publisher>
+  <team>false</team>
+  <isbn>978-3642165047</isbn>
+  <area>Parallel Job Scheduling</area>
+  <subarea>JSSPP</subarea>
+  <notes>
+    Available from [[a href="http://www.springerlink.com/content/978-3-642-16504-7/"]]Springer-Verlag[[/a]] and
+    [[a href="http://www.amazon.com/Scheduling-Strategies-Parallel-Processing-International/dp/3642165044/"]]Amazon[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg09:jsspp</key>
+  <type>book</type>
+  <editors> Frachtenberg, Eitan and Schwiegelshohn, Uwe</editors>
+  <booktitle>
+    Job Scheduling Strategies for Parallel Processing: 14th International Workshop, JSSPP 2009, Revised Selected Papers (Lecture Notes in Computer Science 5798) 
+  </booktitle>
+  <month>10</month>
+  <year>2009</year>
+  <publisher>Springer-Verlag</publisher>
+  <team>false</team>
+  <area>Parallel Job Scheduling</area>
+  <isbn>978-3642046322</isbn>
+  <subarea>JSSPP</subarea>
+  <notes>
+    Available from [[a href="http://www.springerlink.com/content/978-3-642-04632-2/"]]Springer-Verlag[[/a]] and
+    [[a href="http://www.amazon.com/Scheduling-Strategies-Parallel-Processing-International/dp/3642046320/"]]Amazon[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg07:jsspp</key>
+  <type>book</type>
+  <editors> Frachtenberg, Eitan and Schwiegelshohn, Uwe</editors>
+  <booktitle>
+    Job Scheduling Strategies for Parallel Processing: 13th International Workshop, JSSPP 2007, Revised Selected Papers (Lecture Notes in Computer Science 4942) 
+  </booktitle>
+  <month>5</month>
+  <year>2008</year>
+  <publisher>Springer-Verlag</publisher>
+  <team>false</team>
+  <isbn>978-3540786986</isbn>
+  <area>Parallel Job Scheduling</area>
+  <subarea>JSSPP</subarea>
+  <notes>
+    Available from [[a href="http://www.springerlink.com/content/qn5120328285/"]]Springer-Verlag[[/a]] and
+    [[a href="http://www.amazon.com/Scheduling-Strategies-Parallel-Processing-International/dp/3540786988/"]]Amazon[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg06:jsspp</key>
+  <type>book</type>
+  <editors> Frachtenberg, Eitan and Schwiegelshohn, Uwe</editors>
+  <booktitle>
+    Job Scheduling Strategies for Parallel Processing: 12th International Workshop, JSSPP 2006, Revised Selected Papers (Lecture Notes in Computer Science 4376) 
+  </booktitle>
+  <month>3</month>
+  <year>2007</year>
+  <publisher>Springer-Verlag</publisher>
+  <team>true</team>
+  <isbn>978-3540710349</isbn>
+  <area>Parallel Job Scheduling</area>
+  <subarea>JSSPP</subarea>
+  <notes>
+    Available from [[a href="http://www.springerlink.com/content/k46np6050701/"]]Springer-Verlag[[/a]] and
+    [[a href="http://www.amazon.com/Scheduling-Strategies-Parallel-Processing-International/dp/3540710345/"]]Amazon[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>feitelson05:jsspp</key>
+  <type>book</type>
+  <editors>
+    Feitelson, Dror and Frachtenberg, Eitan and Rudolph, Larry and Schwiegelshohn, Uwe
+  </editors>
+  <booktitle>
+    Job Scheduling Strategies for Parallel Processing: 11th International Workshop, JSSPP 2005, Revised Selected Papers (Lecture Notes in Computer Science) 
+  </booktitle>
+  <month>1</month>
+  <year>2006</year>
+  <publisher>Springer-Verlag</publisher>
+  <team>true</team>
+  <isbn>978-3540310242</isbn>
+  <area>Parallel Job Scheduling</area>
+  <subarea>JSSPP</subarea>
+  <notes>
+    Available from [[a href="http://www.springer.com/sgw/cda/frontpage/0,11855,1-146-22-111253236-0,00.html"]]Springer-Verlag[[/a]] and
+    [[a href="http://www.amazon.com/gp/product/354031024X/"]]Amazon[[/a]]
+  </notes>
+</publication>
+
+
+<!-- Book chapters  -->
+
+<publication>
+  <key>cirne12:websched</key>
+  <type>bookchapter</type>
+  <authors>Cirne, Walfredo and Frachtenberg, Eitan</authors>
+  <title>Web-Scale Job Scheduling</title>
+  <booktitle>
+    Job Scheduling Strategies for Parallel Processing, Lecture Notes in Computer Science
+  </booktitle>
+  <editors>Cirne, Walfreo and Desai, Narayan and Frachtenberg, Eitan and Schwiegelshohn, Uwe</editors>
+  <pages>1--16</pages>
+  <month>1</month>
+  <year>2013</year>
+  <isbn>978-3642358661</isbn>
+  <publisher>Springer-Verlag</publisher>
+  <team>false</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>JSSPP</subarea>
+  <series>LNCS</series>
+  <number>7698</number>
+</publication>
+
+
+<publication>
+  <key>frachtenberg08:changing</key>
+  <type>bookchapter</type>
+  <authors> Frachtenberg, Eitan and Schwiegelshohn, Uwe</authors>
+  <title>New Challenges of Parallel Job Scheduling</title>
+  <booktitle>
+    Job Scheduling Strategies for Parallel Processing, Lecture Notes in Computer Science
+  </booktitle>
+  <editors>Frachtenberg, Eitan and Schwiegelshohn, Uwe</editors>
+  <pages>1--23</pages>
+  <month>5</month>
+  <year>2008</year>
+  <isbn>978-3540786986</isbn>
+  <publisher>Springer-Verlag</publisher>
+  <team>false</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>JSSPP</subarea>
+  <series>LNCS</series>
+  <number>4942</number>
+</publication>
+
+
+<publication>
+  <key>fernandez05:predictable</key>
+  <type>bookchapter</type>
+  <authors>
+    Fernandez, Juan and Petrini, Fabrizio and Frachtenberg, Eitan
+  </authors>
+  <title>
+    Achieving Predictable and Scalable Performance with BCS-MPI
+  </title>
+  <booktitle>
+    Engineering the Grid: Status and Perspective
+  </booktitle>
+  <editors>
+    Di Martino, Beniamino and Dongarra, Jack and Hoisie, Adolfy and Yang, Laurence T. and Zima, Hans
+  </editors>
+  <pages></pages>
+  <month>1</month>
+  <year>2006</year>
+  <isbn>1-58883-038-1</isbn>
+  <publisher>Nova Science</publisher>
+  <team>true</team>
+  <area>System Software</area>
+  <subarea>BCS</subarea>
+</publication>
+
+
+<!-- Periodicals & magazines  -->
+
+
+<publication>
+  <key>petrini02:qsnet-micro</key>
+  <type>periodical</type>
+  <authors>
+    Petrini, Fabrizio and Feng, Wu-chun and Hoisie, Adolfy and Coll, Salvador and Frachtenberg, Eitan
+  </authors>
+  <title>The Quadrics Network (QsNet): High-Performance Clustering Technology</title>
+  <booktitle>IEEEMICRO</booktitle>
+  <volume>22</volume>
+  <number>1</number>
+  <pages>46--57</pages>
+  <month>2</month>
+  <year>2002</year>
+  <team>true</team>
+  <area>Interconnects</area>
+  <subarea>QsNet</subarea>
+</publication>
+
+
+<!-- Journal articles  -->
+
+<publication>
+  <key>berezecki12:tilera</key>
+  <type>journal</type>
+  <authors>Berezecki, Mateusz and Frachtenberg, Eitan and Paleczny, Mike and Steele, Kenneth</authors>
+  <title>Power and Performance Evaluation of Memcached on the TILEPro64 Architecture</title>
+  <booktitle>SUSCOM</booktitle>
+  <month>6</month>
+  <year>2012</year>
+  <team>false</team>
+  <volume>2</volume>
+  <number>2</number>
+  <pages>81--90</pages>
+  <area>Computer Architecture</area>
+  <subarea>Multicore</subarea>
+  <doi>10.1016/j.suscom.2012.01.006</doi>
+</publication>
+
+
+<publication>
+  <key>frachtenberg09:parallel-search</key>
+  <type>journal</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Reducing Query Latencies in Web Search Using Fine-Grained Parallelism</title>
+  <booktitle>WWWJ</booktitle>
+  <month>12</month>
+  <year>2009</year>
+  <team>false</team>
+  <volume>12</volume>
+  <number>4</number>
+  <pages>441--460</pages>
+  <area>Information Retrieval</area>
+  <subarea>Performance</subarea>
+</publication>
+
+
+<publication>
+  <key>zhitomirsky09:bow</key>
+  <type>journal</type>
+  <authors>Zhitomirsky-Geffet, Maayan and Feitelson, Dror and Frachtenberg, Eitan and Wiseman, Yair</authors>
+  <title>A Unified Strategy for Search And Result Representation for an Online Bibliographical Catalog</title>
+  <booktitle>OIR</booktitle>
+  <month></month>
+  <year>2009</year>
+  <team>false</team>
+  <volume>33</volume>
+  <number>3</number>
+  <pages>511--536</pages>
+  <doi>10.1108/14684520910969934</doi>
+  <area>Information Retrieval</area>
+  <subarea>Information Representation</subarea>
+</publication>
+
+
+<publication>
+  <key>srinivasan07:neuro-ppm</key>
+  <type>journal</type>
+  <authors>Srinivasan, Ram and Frachtenberg, Eitan and Lubeck, Olaf and Pakin, Scott and Cook, Jeanine</authors>
+  <title>An Idealistic Neuro-PPm Branch Prediction</title>
+  <booktitle>JILP</booktitle>
+  <month>5</month>
+  <year>2007</year>
+  <team>true</team>
+  <volume>9</volume>
+  <area>Computer Architecture</area>
+  <subarea>Branch Prediction</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg05:FCS</key>
+  <type>journal</type>
+  <authors>
+    Frachtenberg, Eitan and Feitelson, Dror G. and Petrini, Fabrizio and Fernandez, Juan 
+  </authors>
+  <title>
+    Adaptive Parallel Job Scheduling with Flexible CoScheduling
+  </title>
+  <booktitle>TPDS</booktitle>
+  <volume>11</volume>
+  <number>16</number>
+  <pages>1066-01077</pages>
+  <month>11</month>
+  <year>2005</year>
+  <team>true</team>
+  <laur>05-1680</laur>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Flexible Coscheduling</subarea>
+</publication>
+
+
+<publication>
+  <key>petrini05:reduce</key>
+  <type>journal</type>
+  <authors>
+    Petrini, Fabrizio and Fernandez, Juan and Moody, Adam and Frachtenberg, Eitan and Panda, Dhabaleswar K.
+  </authors>
+  <title>
+    NIC-based Reduction Algorithms for Large-scale Clusters
+  </title>
+  <booktitle>IJHPCN</booktitle>
+  <volume>4</volume>
+  <number>3-4</number>
+  <pages>122--136</pages>
+  <month></month>
+  <year>2006</year>
+  <team>true</team>
+  <area>Interconnects</area>
+  <subarea>Protocols</subarea>
+</publication>
+
+
+<publication>
+  <key>fernandez06:abstract</key>
+  <type>journal</type>
+  <authors>
+    Fernandez, Juan and Frachtenberg, Eitan and Petrini, Fabrizio and Sancho, Jose Carlos
+  </authors>
+  <title>
+    An Abstract Interface for System Software on Large-Scale Clusters
+  </title>
+  <booktitle>COMPJ</booktitle>
+  <volume>49</volume>
+  <number>4</number>
+  <pages>454--469</pages>
+  <month>7</month>
+  <year>2006</year>
+  <team>true</team>
+  <laur>06-5042</laur>
+  <area>System Software</area>
+  <subarea>System Architecture</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg06:storm</key>
+  <type>journal</type>
+  <authors>
+    Frachtenberg, Eitan and Petrini, Fabrizio and Fernandez, Juan and Pakin, Scott
+  </authors>
+  <title>
+    STORM: Scalable Resource Management for Large-Scale Parallel Computers
+  </title>
+  <booktitle>IEEETC</booktitle>
+  <volume>55</volume>
+  <number>12</number>
+  <pages>1572--1587</pages>
+  <month>12</month>
+  <year>2006</year>
+  <team>true</team>
+  <laur>02-2361</laur>
+  <area>Resource Management</area>
+  <subarea>STORM</subarea>
+</publication>
+
+
+<publication>
+  <key>petrini03:quadrics-evaluation</key>
+  <type>journal</type>
+  <authors>
+    Petrini, Fabrizio and Frachtenberg, Eitan and Hoisie, Adolfy and Coll, Salvador
+  </authors>
+  <title>Performance Evaluation of the Quadrics Interconnection Network</title>
+  <booktitle>JCC</booktitle>
+  <volume>6</volume>
+  <number>2</number>
+  <pages>125--142</pages>
+  <month>4</month>
+  <year>2003</year>
+  <team>true</team>
+  <laur>01-5859</laur>
+  <area>Interconnects</area>
+  <subarea>QsNet</subarea>
+</publication>
+
+
+<publication>
+  <key>coll03:multirail</key>
+  <type>journal</type>
+  <authors>
+    Coll, Salvador and Frachtenberg, Eitan and Petrini, Fabrizio and Hoisie, Adolfy and Gurvits, Leonid
+  </authors>
+  <title>Using Multirail Networks in High-Performance Clusters</title>
+  <booktitle>CCPE</booktitle>
+  <volume>15</volume>
+  <number>7-8</number>
+  <pages>625--651</pages>
+  <month>4</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>Interconnects</area>
+  <subarea>Protocols</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg12:holistic</key>
+  <type>periodical</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Holistic Datacenter Design in the Open Compute Project</title>
+  <booktitle>IEEEC</booktitle>
+  <volume>45</volume>
+  <number>7</number>
+  <pages>83--85</pages>
+  <month>7</month>
+  <year>2012</year>
+  <team>false</team>
+  <area>Computer Architecture</area>
+  <subarea>Datacenter Design</subarea>
+</publication>
+
+<publication>
+  <key>feitelson13:devops</key>
+  <type>periodical</type>
+  <authors>
+    Feitelson, Dror G. and Frachtenberg, Eitan and Beck, Kent L.
+  </authors>
+  <title>Development and Deployment at Facebook</title>
+  <booktitle>IEEEIC</booktitle>
+  <volume>17</volume>
+  <number>4</number>
+  <pages>8--16</pages>
+  <month>7</month>
+  <year>2013</year>
+  <team>false</team>
+  <area>Software Engineering</area>
+  <subarea>DevOps</subarea>
+</publication>
+
+<publication>
+  <key>xu14:workload</key>
+  <type>periodical</type>
+  <authors>
+    Xu, Yuehai and Frachtenberg, Eitan and Jiang, Song and Paleczny, Mike
+  </authors>
+  <title>Characterizing Facebook's Memcached Workload</title>
+  <booktitle>IEEEIC</booktitle>
+  <volume>18</volume>
+  <number>4</number>
+  <pages>41--49</pages>
+  <month>3</month>
+  <year>2014</year>
+  <team>false</team>
+  <area>Information Retrieval</area>
+  <subarea>Workload Analysis</subarea>
+</publication>
+
+
+<!-- Conference papers  -->
+
+<publication>
+  <key>xu14:hippos</key>
+  <type>conference</type>
+  <authors>Xu, Yuehai and Frachtenberg, Eitan and Jiang, Song</authors>
+  <title>Building a High-Performance Key-Value Cache as an Energy-Efficient Appliance</title>
+  <booktitle>PERFORMANCE'14</booktitle>
+  <address>Turin, Italy</address>
+  <month>10</month>
+  <year>2014</year>
+  <team>false</team>
+  <area>Performance Evaluation</area>
+  <subarea>Workload Analysis</subarea>
+</publication>
+
+
+<publication>
+  <key>atikoglu12:workload</key>
+  <type>conference</type>
+  <authors>Atikoglu, Berk and Xu, Yuehai and Frachtenberg, Eitan and Jiang, Song and Paleczny, Mike</authors>
+  <title>Workload Analysis of a Large-Scale Key-Value Store</title>
+  <booktitle>SIGMETRICS'12</booktitle>
+  <address>London, UK</address>
+  <month>6</month>
+  <year>2012</year>
+  <team>false</team>
+  <area>Performance Evaluation</area>
+  <subarea>Energy Efficiency</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg12:thermal</key>
+  <type>conference</type>
+  <authors>Frachtenberg, Eitan and Lee, Dan and Magarelli, Marco and Mulay, Veerendra and Park, Jay</authors>
+  <title>Thermal Design in the Open Compute Datacenter</title>
+  <booktitle>ITHERM'12</booktitle>
+  <address>San Diego, CA</address>
+  <month>5</month>
+  <year>2012</year>
+  <team>false</team>
+  <area>Computer Architecture</area>
+  <subarea>Datacenter Design</subarea>
+</publication>
+
+
+<publication>
+  <key>hart12:modeling</key>
+  <type>conference</type>
+  <authors>Hart, Steven and Frachtenberg, Eitan and Berezecki, Mateusz</authors>
+  <title>Predicting Memcache Throughput using Simulation and Modeling</title>
+  <booktitle>TMS'12</booktitle>
+  <address>Orlando, FL</address>
+  <month>3</month>
+  <year>2012</year>
+  <team>false</team>
+  <area>Computer Architecture</area>
+  <subarea>Simulation and Modeling</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg12:OCP</key>
+  <type>conference</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Design Principles in the Open Compute Project</title>
+  <booktitle>OFC'12</booktitle>
+  <address>Los Angeles, CA</address>
+  <month>3</month>
+  <year>2012</year>
+  <team>false</team>
+  <invited>true</invited>
+  <area>Computer Architecture</area>
+  <subarea>Datacenter Design</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg11:server</key>
+  <type>conference</type>
+  <authors>Frachtenberg, Eitan and Heydari, Ali and Li, Harry and Michael, Amir and Na, Jacob and Nisbet, Avery and Sarti, Pierluigi</authors>
+  <title>High-Efficiency Server Design</title>
+  <booktitle>SC'11</booktitle>
+  <address>Seattle, WA</address>
+  <month>11</month>
+  <year>2011</year>
+  <team>false</team>
+  <area>Computer Architecture</area>
+  <subarea>Server Design</subarea>
+</publication>
+
+
+<publication>
+  <key>berezecki11:manycore</key>
+  <type>conference</type>
+  <authors>Berezecki, Mateusz and Frachtenberg, Eitan and Paleczny, Mike and Steele, Kenneth</authors>
+  <title>Many-Core Key-Value Store</title>
+  <booktitle>IGCC'11</booktitle>
+  <address>Orlando, FL</address>
+  <month>7</month>
+  <year>2011</year>
+  <team>false</team>
+  <area>Computer Architecture</area>
+  <subarea>Multicore</subarea>
+</publication>
+
+
+<publication>
+  <key>srinivasan06:ppm</key>
+  <type>workshop</type>
+  <authors>Srinivasan, Ram and Frachtenberg, Eitan and Lubeck, Olaf and Pakin, Scott and Cook, Jeanine</authors>
+  <title>Neuro-PPm Branch Prediction</title>
+  <booktitle>CBP'06</booktitle>
+  <address>Orlando, FL</address>
+  <month>12</month>
+  <year>2006</year>
+  <team>true</team>
+  <laur></laur>
+  <area>Computer Architecture</area>
+  <subarea>Branch Prediction</subarea>
+  <notes>[[b]][[font color="#721026"]]Competition Finalist[[/font]][[/b]]</notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg06:case</key>
+  <type>workshop</type>
+  <authors>Frachtenberg, Eitan and Etsion, Yoav</authors>
+  <title>Hardware Parallelism: Are Operating Systems Ready? (Case Studies in Mis-Scheduling)</title>
+  <booktitle>WIOSCA'06</booktitle>
+  <address>Boston, MA</address>
+  <month>6</month>
+  <year>2006</year>
+  <team>true</team>
+  <laur></laur>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Desktop Scheduling</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg05:crossroads</key>
+  <type>conference</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Process Scheduling for the Parallel Desktop</title>
+  <booktitle>I-SPAN'05</booktitle>
+  <address>Las Vegas, NV</address>
+  <month>12</month>
+  <year>2005</year>
+  <team>true</team>
+  <laur>05-0638</laur>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Desktop Scheduling</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg05:pitfalls</key>
+  <type>workshop</type>
+  <authors>
+    Frachtenberg, Eitan and Feitelson, Dror G.
+  </authors>
+  <title>Pitfalls in Parallel Job Scheduling Evaluation</title>
+  <booktitle>JSSPP'05</booktitle>
+  <address>Boston, MA</address>
+  <month>6</month>
+  <year>2005</year>
+  <team>true</team>
+  <laur>05-3474</laur>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Methodology</subarea>
+</publication>
+
+
+<publication>
+  <key>fernandez05:MDS</key>
+  <type>workshop</type>
+  <authors>
+    Fernandez, Juan and Petrini, Fabrizio and Frachtenberg, Eitan 
+  </authors>
+  <title>
+    Monitoring and Debugging Parallel Software with BCS-MPI on 
+    Large-Scale Clusters
+  </title>
+  <booktitle>SMTPS'05</booktitle>
+  <address>Denver, CO</address>
+  <month>4</month>
+  <year>2005</year>
+  <team>true</team>
+  <area>System Software</area>
+  <subarea>BCS</subarea>
+</publication>
+
+
+<publication>
+  <key>petrini04:design</key>
+  <type>conference</type>
+  <authors>
+    Petrini, Fabrizio and Sancho, Jose Carlos and Frachtenberg, Eitan and Fernandez, Juan and Davis, Kei
+  </authors>
+  <title>
+    On the Design of System Software for Large-Scale Clusters
+  </title>
+  <booktitle>XV Jornadas de Paralelismo</booktitle>
+  <address>Almeria, Spain</address>
+  <month>9</month>
+  <year>2004</year>
+  <pages>237--242</pages>
+  <isbn>84-8240-714-7</isbn>
+  <team>true</team>
+  <area>System Software</area>
+  <subarea>System Architecture</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg04:parOS</key>
+  <type>conference</type>
+  <authors>
+    Frachtenberg, Eitan and Davis, Kei and Petrini, Fabrizio and Sancho, Jose Carlos and Fernandez, Juan
+  </authors>
+  <title>
+    Designing Parallel Operating Systems via Parallel Programming
+  </title>
+  <booktitle>EUROPAR'04</booktitle>
+  <address>Pisa, Italy</address>
+  <month>8</month>
+  <year>2004</year>
+  <team>true</team>
+  <area>System Software</area>
+  <subarea>System Architecture</subarea>
+</publication>
+
+
+<publication>
+  <key>fernandez04:parallel-OS</key>
+  <type>conference</type>
+  <authors>
+    Fernandez, Juan and Frachtenberg, Eitan and Petrini, Fabrizio and Davis, Kei and Sancho, Jose Carlos
+  </authors>
+  <title>
+    Architectural Support for System Software on Large-Scale Clusters
+  </title>
+  <booktitle>ICPP'04</booktitle>
+  <address>Montreal, Quebec, CA</address>
+  <month>8</month>
+  <year>2004</year>
+  <team>true</team>
+  <laur>04-3795</laur>
+  <area>System Software</area>
+  <subarea>System Architecture</subarea>
+</publication>
+
+
+<publication>
+  <key>sancho04:checkpointing</key>
+  <type>conference</type>
+  <authors>
+    Sancho, Jose Carlos and Petrini, Fabrizio and Johnson, Greg and Fernandez, Juan and Frachtenberg, Eitan
+  </authors>
+  <title>
+    On the Feasibility of Incremental Checkpointing for Scientific Computing
+  </title>
+  <booktitle>IPDPS'04</booktitle>
+  <address>Santa Fe, NM, USA</address>
+  <month>4</month>
+  <year>2004</year>
+  <team>true</team>
+  <area>Fault Tolerance</area>
+  <subarea>Applications</subarea>
+</publication>
+
+
+<publication>
+  <key>fernandez03:BCS</key>
+  <type>conference</type>
+  <authors>
+    Fernandez, Juan and Frachtenberg, Eitan and Petrini, Fabrizio
+  </authors>
+  <title>BCS-MPI: A New Approach in the System Software Design for Large-Scale Parallel Computers</title>
+  <booktitle>SC'03</booktitle>
+  <address>Phoenix, AZ</address>
+  <month>11</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>System Software</area>
+  <subarea>BCS</subarea>
+</publication>
+
+
+<publication>
+  <key>petrini03:ASCI-Q-collectives</key>
+  <type>conference</type>
+  <authors>
+    Petrini, Fabrizio and Fernandez, Juan and Frachtenberg, Eitan and Coll, Salvador 
+  </authors>
+  <title>Scalable Collective Communication on the ASCI Q Machine</title>
+  <booktitle>HOTI'03</booktitle>
+  <address>Stanford University, Palo Alto, CA</address>
+  <month>8</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>Interconnects</area>
+  <subarea>QsNet</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg03:dynamic</key>
+  <type>workshop</type>
+  <authors>
+    Frachtenberg, Eitan and Feitelson, Dror G. and Fernandez, Juan and Petrini, Fabrizio
+  </authors>
+  <title>Parallel Job Scheduling under Dynamic Workloads</title>
+  <booktitle>JSSPP'03</booktitle>
+  <address>Seattle, WA</address>
+  <month>6</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Flexible Coscheduling</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg03:FCS</key>
+  <type>conference</type>
+  <authors>
+    Frachtenberg, Eitan and Feitelson, Dror G. and Petrini, Fabrizio and Fernandez, Juan
+  </authors>
+  <title>Flexible CoScheduling: Dealing with Load Imbalance and Heterogeneous Resources</title>
+  <booktitle>IPDPS'03</booktitle>
+  <address>Nice, France</address>
+  <month>4</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Flexible Coscheduling</subarea>
+  <notes>[[b]][[font color="#721026"]]Best Paper Award[[/font]][[/b]]</notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg02:STORM</key>
+  <type>conference</type>
+  <authors>
+    Frachtenberg, Eitan and Petrini, Fabrizio and Fernandez, Juan and Pakin, Scott and Coll, Salvador
+  </authors>
+  <title>STORM: Lightning-Fast Resource Management</title>
+  <booktitle>SC'02</booktitle>
+  <address>Baltimore, MD</address>
+  <month>11</month>
+  <year>2002</year>
+  <team>true</team>
+  <laur>02-2730</laur>
+  <area>Resource Management</area>
+  <subarea>STORM</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg02:scalable-RM</key>
+  <type>conference</type>
+  <authors>
+    Frachtenberg, Eitan and Petrini, Fabrizio and Fernandez, Juan and Coll, Salvador
+  </authors>
+  <title>Scalable Resource Management in High-Performance Computers</title>
+  <booktitle>CLUSTER'02</booktitle>
+  <address>Chicago, IL</address>
+  <month>9</month>
+  <year>2002</year>
+  <team>true</team>
+  <laur>02-1672</laur>
+  <area>Resource Management</area>
+  <subarea>STORM</subarea>
+</publication>
+
+
+<publication>
+  <key>coll02:qsnet-IO</key>
+  <type>workshop</type>
+  <authors>
+    Coll, Salvador and Petrini, Fabrizio and Frachtenberg, Eitan and Hoisie, Adolfy
+  </authors>
+  <title>
+    Performance Evaluation of I/O Traffic and Placement of I/O Nodes on a High Performance Network
+  </title>
+  <booktitle>CAC'02</booktitle>
+  <address>Fort Lauderdale, FL</address>
+  <month>4</month>
+  <year>2002</year>
+  <team>true</team>
+  <area>Interconnects</area>
+  <subarea>QsNet</subarea>
+</publication>
+
+
+<publication>
+  <key>petrini01:collectives</key>
+  <type>conference</type>
+  <authors>
+    Petrini, Fabrizio and Coll, Salvador and Frachtenberg, Eitan and Hoisie, Adolfy
+  </authors>
+  <title> Hardware- and Software-Based Collective Communication on the Quadrics Network</title>
+  <booktitle>NCA'01</booktitle>
+  <address>Boston, MA</address>
+  <month>10</month>
+  <year>2001</year>
+  <team>true</team>
+  <laur>01-4692</laur>
+  <area>Interconnects</area>
+  <subarea>QsNet</subarea>
+</publication>
+
+
+<publication>
+  <key>coll01:multirail</key>
+  <type>conference</type>
+  <authors>
+    Coll, Salvador and Frachtenberg, Eitan and Petrini, Fabrizio and Hoisie, Adolfy and Gurvits, Leonid
+  </authors>
+  <title>Using Multirail Networks in High-Performance Clusters</title>
+  <booktitle>CLUSTER'01</booktitle>
+  <address>Newport Beach, CA</address>
+  <month>10</month>
+  <year>2001</year>
+  <team>true</team>
+  <laur>01-4202</laur>
+  <area>Interconnects</area>
+  <subarea>Protocols</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg01:RMS-GS</key>
+  <type>workshop</type>
+  <authors>
+    Frachtenberg, Eitan and Petrini, Fabrizio and Coll, Salvador and Feng, Wu-chun
+  </authors>
+  <title>Gang Scheduling with Lightweight User-Level Communication</title>
+  <booktitle>SRMCC'01</booktitle>
+  <address>Valencia, Spain</address>
+  <month>9</month>
+  <year>2001</year>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Gang Scheduling</subarea>
+  <comment-notes>Invited work</comment-notes>
+</publication>
+
+
+<publication>
+  <key>petrini01:qsnet</key>
+  <type>conference</type>
+  <authors>
+    Petrini, Fabrizio and Feng, Wu-chun and Hoisie, Adolfy and Coll, Salvador and Frachtenberg, Eitan 
+  </authors>
+  <title>The Quadrics Network (QsNet): High-Performance Clustering Technology</title>
+  <booktitle>HOTI'01</booktitle>
+  <address>Stanford University, Palo Alto, CA</address>
+  <month>8</month>
+  <year>2001</year>
+  <team>true</team>
+  <area>Interconnects</area>
+  <subarea>QsNet</subarea>
+</publication>
+
+
+<!-- Technical Reports  -->
+
+<publication>
+  <key>zhitomirsky08:bow</key>
+  <type>report</type>
+  <authors>Zhitomirsky-Geffet, Maayan and Frachtenberg, Eitan and Wiseman, Yair and Feitelson, Dror</authors>
+  <title>Seeking Optimal Search Strategy and Result Representation in BoW</title>
+  <month></month>
+  <year>2008</year>
+  <team>false</team>
+  <area>Information Retrieval</area>
+  <subarea>Information Representation</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg04:commodity-scheduling</key>
+  <type>report</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Process Coordination for Commodity Systems</title>
+  <booktitle>LANL</booktitle>
+  <month>12</month>
+  <year>2004</year>
+  <team>true</team>
+  <laur>04-7256</laur>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Process Scheduling</subarea>
+</publication>
+
+
+<!--
+<li>
+  Eitan Frachtenberg, Dror G. Feitelson, Fabrizio Petrini and Juan Fernandez.
+  <b>Flexible CoScheduling: Dealing with Load Imbalance and Heterogeneous Resources.</b>
+  Technical Report 2002-47,
+  <a href="http://leibniz.cs.huji.ac.il/research/">School of Computer Science and Engineering</a>,
+  The Hebrew University of Jerusalem,
+  October 2002<br>
+  <a href="techrep/fcs.pdf">PDF</a>
+  <a href="bibtex/fcs">BibTeX</a>
+  <br>&nbsp;
+</li>
+-->
+
+<publication>
+  <key>frachtenberg01:qsnet-overlap</key>
+  <type>report</type>
+  <authors>Frachtenberg, Eitan and Petrini, Fabrizio</authors>
+  <title>Overlapping Communication and Computation in the Quadrics Network</title>
+  <booktitle>LANL</booktitle>
+  <month>8</month>
+  <year>2001</year>
+  <team>true</team>
+  <laur>01-4695</laur>
+  <area>Parallel Job Scheduling</area>
+  <subarea>QsNet</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg01:testbed-design</key>
+  <type>report</type>
+  <authors>Frachtenberg, Eitan and Petrini, Fabrizio</authors>
+  <title>Scheduler Testbed System Design</title>
+  <booktitle>LANL</booktitle>
+  <month>8</month>
+  <year>2001</year>
+  <team>true</team>
+  <laur>01-4694</laur>
+  <area>Parallel Job Scheduling</area>
+  <subarea>STORM</subarea>
+</publication>
+
+
+<publication>
+  <key>coll01:static-multirail</key>
+  <type>report</type>
+  <authors>
+    Coll, Salvador and Frachtenberg, Eitan and Petrini, Fabrizio and Hoisie, Adolfy and Gurvits, Leonid
+  </authors>
+  <title>Static Allocation of Multirail Networks</title>
+  <booktitle>LANL</booktitle>
+  <laur>01-3896</laur>
+  <month>7</month>
+  <year>2001</year>
+  <team>true</team>
+  <area>Interconnects</area>
+  <subarea>Protocols</subarea>
+</publication>
+
+
+<!-- Posters  -->
+
+<publication>
+  <key>nvision-poster</key>
+  <type>poster</type>
+  <authors>Madhavan, Anand and Frachtenberg, Eitan</authors>
+  <title>Combinatorial Set Matching using GPUs</title>
+  <booktitle>NVision'08 </booktitle>
+  <address>San Jose, CA</address>
+  <month>8</month>
+  <year>2008</year>
+  <team>false</team>
+  <area>Computer Architecture</area>
+  <subarea>GPGPU computing</subarea>
+</publication>
+
+
+<publication>
+  <key>schedmark-poster</key>
+  <type>poster</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>SchedMark: Evaluating Scheduler Performance</title>
+  <booktitle>USENIX'05</booktitle>
+  <address>Anaheim, CA</address>
+  <month>4</month>
+  <year>2005</year>
+  <team>true</team>
+  <laur>05-2856</laur>
+  <area>System Software</area>
+  <subarea>Process scheduling</subarea>
+</publication>
+
+
+<publication>
+  <key>fernandez04:BCS-poster</key>
+  <type>poster</type>
+  <authors>
+    Fernandez, Juan and Petrini, Fabrizio and Frachtenberg, Eitan
+  </authors>
+  <title>
+    Buffered Coscheduled (BCS) MPI:
+    A New Approach in the System Software Design for Large-Scale Parallel Computers
+  </title>
+  <booktitle>CCS Division Review Committee</booktitle>
+  <address>LANL</address>
+  <month>4</month>
+  <year>2004</year>
+  <team>true</team>
+  <area>System Software</area>
+  <subarea>BCS</subarea>
+</publication>
+
+
+<publication>
+  <key>fernandez03:poster-BCS</key>
+  <type>poster</type>
+  <authors>
+    Fernandez, Juan and Petrini, Fabrizio and Frachtenberg, Eitan
+  </authors>
+  <title>Buffered Coscheduled (BCS) MPI</title>
+  <booktitle>
+    [[a href="http://www.lanl.gov/orgs/ccn/salishan2003/abstracts3.htm#Fernandez"]]
+    The conference on High-Speed Computing[[/a]]
+  </booktitle>
+  <address>Glenden Beach, OR</address>
+  <month>4</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>BCS</subarea>
+  <notes>
+    Invited work
+  </notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg02:poster-STORM</key>
+  <type>poster</type>
+  <authors>
+    Frachtenberg, Eitan and Fernandez, Juan and Petrini, Fabrizio and Pakin, Scott
+  </authors>
+  <title>STORM: A Scalable TOol for Resource Management</title>
+  <booktitle>
+    [[a href="http://www.ccs.lanl.gov/salishan02/salishanindex.htm"]]
+    The conference on High-Speed Computing[[/a]]
+  </booktitle>
+  <address>Glenden Beach, OR</address>
+  <month>4</month>
+  <year>2002</year>
+  <team>true</team>
+  <area>Resource Management</area>
+  <subarea>STORM</subarea>
+  <notes>
+    Invited work
+    A more recent (and nicer) version of the poster can be found 
+    [[a href="papers/storm-poster-new.pdf"]]here[[/a]].
+    Yet another version was shown at the LANL booth at SC'02 
+    [[a href="papers/poster-sc02.pdf"]]here[[/a]]
+  </notes>
+</publication>
+
+
+<!-- Talks  -->
+
+<publication>
+  <key>frachtenberg12:icac</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>High Efficiency at Web Scale</title>
+  <booktitle>ICAC'12</booktitle>
+  <address>San Jose, CA</address>
+  <month>9</month>
+  <year>2012</year>
+  <team>false</team>
+  <area>Computer Architecture</area>
+  <subarea>Datacenter Design</subarea>
+  <notes>
+    [[b]][[font color="#721026"]]Keynote[[/font]][[/b]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg12:OCP-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Design Principles in the Open Compute Project</title>
+  <booktitle>OFC'12</booktitle>
+  <address>Los Angeles, CA</address>
+  <month>3</month>
+  <year>2012</year>
+  <team>false</team>
+  <area>Computer Architecture</area>
+  <subarea>Datacenter Design</subarea>
+  <notes> Invited Talk</notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg05:crossroads-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Process Scheduling for the Parallel Desktop</title>
+  <booktitle>I-SPAN'05</booktitle>
+  <address>Las Vegas, NV</address>
+  <month>12</month>
+  <year>2005</year>
+  <team>false</team>
+  <laur>05-0638</laur>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Desktop Scheduling</subarea>
+</publication>
+
+
+<publication>
+  <key>pitfalls05-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Pitfalls in Parallel Job Scheduling Evaluation</title>
+  <booktitle>JSSPP'05</booktitle>
+  <address>Boston, MA</address>
+  <month>6</month>
+  <year>2005</year>
+  <team>false</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Methodology</subarea>
+  <notes>
+    [[br]][[a href="talks/frachtenberg05:pitfalls.ppt"]]Download slides[[/a]]
+    [[br]]An expanded version of this talk was given at
+    [[a href="http://www.nmt.edu"]]New Mexico Institute of Mining and Technology[[/a]] (Nov. 2005)
+    [[br]][[a href="talks/pitfalls-NMTech.ppt"]]Download expanded slides[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>frachtenberg05:schedmark-wip</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>SchedMark: Evaluating Scheduler Performance</title>
+  <booktitle>
+    Work-in-Progress session of USENIX'05 
+  </booktitle>
+  <address>Anaheim, CA</address>
+  <month>4</month>
+  <year>2005</year>
+  <team>true</team>
+  <area>System Software</area>
+  <subarea>Process scheduling</subarea>
+</publication>
+
+
+<publication>
+  <key>multirail04-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Using Multi-Rail Networks in High-Performance Clusters</title>
+  <booktitle>
+    [[a href="http://www-comnet.technion.ac.il/Info/AboutUs/clubnet_win_05.html"]]
+    ClubNet, Department of Electrical Engineering[[/a]]
+  </booktitle>
+  <address>Technion Israel Institute of Technology, Haifa, Israel</address>
+  <month>12</month>
+  <year>2004</year>
+  <team>true</team>
+  <laur>01-4202</laur>
+  <area>Interconnects</area>
+  <subarea>Multirail</subarea>
+</publication>
+
+
+<publication>
+  <key>evaluation04-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Toward Realistic Evaluation of Job Scheduling Strategies</title>
+  <booktitle>
+    Seminar talk, given at the Computer Science departments of 
+    [[a href="http://www.cs.huji.ac.il/~collo/December-06-04.html"]]
+    Hebrew University (Jerusalem)[[/a]],
+    [[a href="http://www.cs.tau.ac.il/~amnon/colloquium/2004.12.12.eitan/Abstract.html"]]
+    Tel Aviv University (Tel Aviv)[[/a]],
+    [[a href="http://www.cs.technion.ac.il/~colloq/20041207_14_30_frachtenberg.html"]]
+    Technion, Israel Institute of Technology (Haifa)[[/a]], 
+    [[a href="http://www.faculty.idc.ac.il/tami/seminar/Eitan.txt"]]
+    Interdisciplinary Center (Herzlia)[[/a]], and
+    [[a href="http://www.cs.bgu.ac.il/suexec/calendar/seminars/calendar.pl"]]
+    Ben Gurion University, (Beer Sheva)[[/a]]
+  </booktitle>
+  <address>Israel</address>
+  <month>12</month>
+  <year>2004</year>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Performance Evaluation</subarea>
+</publication>
+
+
+<publication>
+  <key>mit04-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Designing Parallel Operating Systems using Modern Interconnects</title>
+  <booktitle>
+    [[a href="http://www.csail.mit.edu/index.php"]]
+    MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)[[/a]]
+  </booktitle>
+  <address>Massachussetes Institute of Technology, Cambridge MA</address>
+  <month>9</month>
+  <year>2004</year>
+  <team>true</team>
+  <laur>04-3796 </laur>
+  <area>System Software</area>
+  <subarea>System Architecture</subarea>
+  <notes>
+    Invited talk
+    [[br]][[a href="talks/mit04.ppt"]]Download slides[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>jpdps03-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Leveraging Modern Interconnects for Parallel System Software</title>
+  <booktitle>
+    3rd Jerusalem Parallel and Distributed Programming Symposium
+    [[a href="http://www.tau.ac.il/~stoledo/JPDPS/"]]JPDPS'03[[/a]]
+  </booktitle>
+  <address>Tel Aviv University, Israel</address>
+  <month>12</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Flexible Coscheduling</subarea>
+  <notes>
+    Invited talk.
+    [[br]][[a href="talks/jpdps03.pdf"]]Download slides[[/a]]
+    [[br]]An expanded version of this talk was given at
+    [[a href="http://www.cs.huji.ac.il"]]Hebrew university[[/a]] (Dec. 2003) and at the 
+    [[a href="http://www.cs.technion.ac.il/~colloq/20031222_14_30_Frachtenberg.html"]]Technion[[/a]] (Dec. 2003). 
+    [[br]][[a href="talks/technion-2003.pdf"]]Download expanded slides[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>jsspp03-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Parallel Job Scheduling under Dynamic Workloads</title>
+  <booktitle>JSSPP'03</booktitle>
+  <address>Seattle, WA</address>
+  <month>6</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Flexible Coscheduling</subarea>
+  <notes>
+    [[br]][[a href="talks/frachtenberg03:dynamic.pdf"]]Download slides[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>ipdps03-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Flexible CoScheduling: Dealing with Load Imbalance and Heterogeneous Resources</title>
+  <booktitle>IPDPS'03</booktitle>
+  <address>Nice, France</address>
+  <month>4</month>
+  <year>2003</year>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Flexible Coscheduling</subarea>
+  <notes>
+    [[b]][[font color="#721026"]]Best Paper Award. [[/font]][[/b]]
+    [[br]][[a href="talks/frachtenberg03:FCS.pdf"]]Download slides[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>cluster02-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Scalable Resource Management in High-Performance Computers</title>
+  <booktitle>CLUSTER'02</booktitle>
+  <address>Chicago, IL</address>
+  <month>9</month>
+  <year>2002</year>
+  <team>true</team>
+  <area>Resource Management</area>
+  <subarea>STORM</subarea>
+  <notes>
+    [[br]][[a href="talks/frachtenberg02:scalable-RM.pdf"]]Download slides[[/a]]
+    [[br]]An expanded version of this talk was given at
+    [[a href="http://www.cs.huji.ac.il"]]Hebrew university[[/a]] (Nov. 2002),
+    at [[a href="http://domino.watson.ibm.com/comm/wwwr_seminar.nsf/pages/sem_abstract_229.html"]]
+    IBM/Haifa[[/a]] (Dec. 2002)
+    and at [[a href="http://www.idc.ac.il/"]]IDC/Herzlia[[/a]] (Dec. 2002). 
+    [[br]][[a href="talks/STORM-expanded-talk.pdf"]]Download expanded slides[[/a]]
+  </notes>
+</publication>
+
+
+<publication>
+  <key>icpp01-talk</key>
+  <type>talk</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Gang Scheduling with Lightweight User-Level Communication</title>
+  <booktitle>SRMCC'01</booktitle>
+  <address>Valencia, Spain</address>
+  <month>9</month>
+  <year>2001</year>
+  <note>Invited work</note>
+  <team>true</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Gang Scheduling</subarea>
+  <notes>
+    [[br]][[a href="talks/frachtenberg01:RMS-GS.pdf"]]Download slides[[/a]]
+  </notes>
+</publication>
+
+
+<!-- Theses  -->
+
+<publication>
+  <key>frachtenberg03:PhD</key>
+  <type>thesis</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Leveraging Modern Interconnects for Parallel System Software</title>
+  <booktitle>Ph.D. dissertation</booktitle>
+  <address>Hebrew University, Jerusalem, Israel</address>
+  <month>12</month>
+  <year>2003</year>
+  <team>false</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Interconnects</subarea>
+</publication>
+
+
+<publication>
+  <key>frachtenberg01:MSc</key>
+  <type>thesis</type>
+  <authors>Frachtenberg, Eitan</authors>
+  <title>Flexible Coscheduling</title>
+  <booktitle>M.Sc. thesis</booktitle>
+  <address>Hebrew University, Jerusalem, Israel</address>
+  <month>12</month>
+  <year>2001</year>
+  <team>false</team>
+  <area>Parallel Job Scheduling</area>
+  <subarea>Flexible Coscheduling</subarea>
+</publication>
+
+
+</pubDB>
