@@ -374,7 +374,7 @@ class Publist {
         print $start;
         foreach ($this->cites as $k=>$n) {
             $linkid = array('linkid' => $this->reflistname.$n);
-            $this->pubs[$this->pubs_lut[$k]]->print_pub($this->config, $linkid);
+            $this->pubs[$this->pubs_lut[strtolower($k)]]->print_pub($this->config, $linkid);
         }
         print $stop;
         $this->link_home();
