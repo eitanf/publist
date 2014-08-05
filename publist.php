@@ -162,6 +162,7 @@ class Publist {
         $desc  = $this->config->get ("Formatting", "jump_description");
 
         $links = array();   // store all links in an array and then join the array using the separator
+        $names = array();
         foreach ($this->pubs as $p) {
             if (is_a ($p, "publication") && $this->is_visible ($p, $teamonly)) {
                 $header = $p->get_header ($this->sort["primary"]);
@@ -169,15 +170,22 @@ class Publist {
 
                 if (!isset ($count[$idx])) {
                     $count[$idx] = 0;
-                    $links[] = '<a href="#publist' . $idx . '">'
-                    . (isset ($header)? $header : $idx)
-                    . "</a>";
+                    $names[] = isset ($header)? $header : $idx;
+                    $links[] = "#publist" . $idx;
                 }
                 $count[$idx]++;
             }
         }
         if (count($links)) {
-            print '<div class="publistjumps">'. $start . $desc . join($sep, $links) . $stop . "</div>\n";
+            print $start . $desc;
+            print '<form>';
+            print '<select onchange="location = this.options[this.selectedIndex].value;">';
+            for ($i = 0; $i < count($links); $i++)
+                print '<option value="' . $links[$i] . '">' . $names[$i];
+            print '</select>';
+            print '</form>';
+            print $stop;
+#            print '<div class="publistjumps">'. $start . $desc . join($sep, $links) . $stop . "</div>\n";
         }
     }
 
