@@ -222,7 +222,10 @@ class Publication {
         if ($url !== '') {
             if ($fileclass == 'abstract') {
                 return "<details class='abstract'><summary>$linkname</summary>"
-                . file_get_contents($files[0]) . "</details>";
+                . '<div><p>'
+                . file_get_contents($files[0])
+                . '</p></div>'
+                . "</details>";
             } else {
                 return "<a class='download' data-filename='$url' href='$url'>$text</a>"
                 . ($filesource ? $this->format_file_type ($config, $files[0]) : '');
