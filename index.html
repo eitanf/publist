@@ -1,0 +1,192 @@
+<!-- Copyright 2003-2014 Eitan Frachtenberg publist@frachtenberg.org -->
+
+<html>
+<head>
+  <title>Publist - Publication List Tool</title>
+</head>
+<body bgcolor="#FCFFD5">
+
+<h1>Publist - Publication List Tool</h1>
+
+Publist is a small set of PHP scripts that automates many of the chores involved in maintaining 
+and presenting an online publication list. Here are some of Publist's main features:<p>
+
+<ul>
+<li> Generates pretty-printed HTML description of publications
+<li> Allows sorting of publications by type, date, author, area, or potentially any other criterion
+<li> Allows publication sub-lists using any selection criterion (e.g. area)
+<li> Full support of HTML4 and CSS3 formatting
+<li> Allows embedded HTML in publication fields (enabling URLs, colors, fonts,...)
+<li> Includes script to read BibTeX format and convert to XML
+<li> Automatic generation of BibTeX files from publication data
+<li> Automatic linking to downloadable paper, presentation, BibTeX, abstract and more
+<li> 'Reference' mode allows HTML citing of papers just like with BibTeX
+<li> Automatically tags as 'New' publications within the last few months (configurable)
+<li> Support for team and individual pages from same database
+<li> XML input allows simple extension to new fields or types of publications
+<li> Use macros for commonly ocurring string substitutions
+<li> Optional admin interface to edit publications directly from the web
+</ul>
+
+
+<p>
+To see how a full publication list with sort options looks like, check out 
+<a href="http://frachtenberg.org/eitan/pubs/">my publications page</a>. 
+To see how you can use arbitrary selection criteria to embed partial publication lists in an HTML document, 
+have a look at <a href="http://frachtenberg.org/eitan/pubs/research.php">my research page</a>. 
+A <a href="http://frachtenberg.org/eitan/pubs/refs.php">demo page</a> 
+is also available to see how numbered references can be added to a page.
+<p>
+
+<h2>Where to get the latest version of publist:</h2>
+
+You can clone (or download) the github repository from <a href="http://github.com/eitanf/publist">here</a><p>
+
+<h2>How to use publist:</h2>
+To use publist, you need to create or convert your publication list in XML format. 
+Instructions and examples on how to do this are found <a href="format.html">here</a>. 
+To get a feeling for what this file looks like, you can have a look at 
+<a href="../pubs/pubs.xml">mine</a>.<br>
+Having created the list, you'll need to set up publication page(s). 
+This might be as simple as renaming your existing HTML page to a .php extension, 
+and adding 2-5 lines to it depending on what and how you want to present your publications. 
+You may also want to set up directories with downloadable files such as papers, presentations, and abstracts. 
+Instructions on how to do all this can be found <a href="usage.html">here</a>.<br>
+To get the feeling for what publications pages look like at the source level, 
+you can find three php examples (versions of my own lists)
+in the examples/ directory of the Publist package.
+You should open the examples with an editor and not a browser, to see the PHP code.<p>
+
+
+<h2>Revision history</h2>
+
+<table BORDER COLS=3 WIDTH="100%" NOSAVE >
+<tr>
+<td><b>Version</b></td>
+<td><b>Date</b></td>
+<td><b>Main features/changes</b></td>
+</tr>
+
+<tr>
+<td><b><font color="green">2.0</font></b></td>
+<td><b><font color="green">08/08/2014</font></b></td>
+<td><b><font color="green">Major update</font></b> <br>
+  Added customization through .ini file and CSS<br>
+  Support for non-publication list kinds (e.g., <a href="http://frachtenberg.com/eitan/flying.php">This list</a>)<br>
+  Admin interface to edit publications over the Web<br>
+  Many smaller improvements<br>
+  
+</td>
+</tr>
+
+<tr>
+<td>1.2</td>
+<td>14/06/2005</td>
+<td>New tag and functions to print team and author lists<br>
+    String support, similar to BibTeX's @string<br>
+    Various small documentation, presentation, and code fixes<br>
+</tr>
+
+<tr>
+<td>1.1</td>
+<td>02/03/2005</td>
+<td>New bib2xml script converts BibTeX file to Publist XML<br>
+    Minor changes in presentation, especially for books<br>
+    Incoporated examples into main archive</td>
+</tr>
+
+<tr>
+<td>1.0a</td>
+<td>1/1/2005</td>
+<td>Changed  display of "periodical" and workshop" types<br>
+    Documentation fixes</td>
+</tr>
+
+<tr>
+<td><b><font color="green">1.0</font></b></td>
+<td><b><font color="green">28/12/2004</font></b></td>
+<td><b><font color="green">First official release</font></b>
+  <br>
+  Added "periodical" type (for magazines)<br>
+  Fixed support for types bookchapter and book<br>
+</td>
+</tr>
+
+<tr>
+<td>0.97</td>
+<td>19/12/2004</td>
+<td>Added "New" tagging for publications from last n months</td>
+</tr>
+
+<tr>
+<td>0.96</td>
+<td>09/08/2004</td>
+<td>Added "Jump to" links bar</td>
+</tr>
+
+<tr>
+<td>0.95</td>
+<td>05/01/2004</td>
+<td>Added "thesis" type</td>
+</tr>
+
+<tr>
+<td>0.94a</td>
+<td>17/09/2003</td>
+<td>Various documentation fixes</td>
+</tr>
+
+<tr>
+<td>0.94</td>
+<td>07/07/2003</td>
+<td>Added generic selection querying</td>
+</tr>
+
+<tr>
+<td>0.93</td>
+<td>27/06/2003</td>
+<td>Added links to source and reviews (with password protection)</td>
+</tr>
+
+<tr>
+<td>0.92</td>
+<td>09/06/2003</td>
+<td>Documentation completed, first beta</td>
+</tr>
+
+<tr>
+<td>0.91</td>
+<td>05/06/2003</td>
+<td>Added Reference mode</td>
+</tr>
+
+<tr>
+<td>0.90</td>
+<td>15/05/2003</td>
+<td>XML parsing, sorting, and selection querying</td>
+</tr>
+
+</table><p>
+
+
+<h2>License</h2>
+This program is copyright 2003--2014  by <a href="http://frachtenberg.org/eitan/">Eitan Frachtenberg</a>
+ (email: <a href="mailto:publist@etc.co.il">publist@frachtenberg.org</a>)<br>
+Distributed under the terms of the GNU General Public License v. 2 (see file COPYING)<br>
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+<br>
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+<p>
+
+</body>
+</html>
+

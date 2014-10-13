@@ -3,7 +3,7 @@
  *  PubEdit Object for editing a publication
  *  Copyright 2005 Stuart Prescott (publist@nanonanonano.net)
  *
- *  This file is part of the Publist package (publist.sf.net)
+ *  This file is part of the Publist package (https://github.com/eitanf/publist)
  *  and is distributed under the terms of the GNU General Public License
  */
 

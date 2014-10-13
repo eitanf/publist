@@ -1,0 +1,96 @@
+<!-- Copyright 2003,2004 Eitan Frachtenberg publist@etc.co.il -->
+
+<html>
+<head>
+  <title>XML format</title>
+</head>
+<body bgcolor="#FCFFD5">
+
+
+<center><font size=+2><u>XML Format</u></font></center><p><p>
+
+This page describes how to create a publications database file for use with 
+<a href="http://frachtenberg.org/eitan/publist">Publist</a>. 
+If you prefer to forgo the instructions, or follow them with ease, I suggest 
+you download my own <a href="http://frachtenberg.org/eitan/pubs/pubs.xml">XML file</a>, 
+and have a look.<br>
+
+You should start with an XML file that has only these two lines:<br>
+<tt>&lt;pubDB&gt;<br>
+&lt;/pubDB&gt;<br></tt>
+Anything you add should be between these two lines. Do not add any lines 
+before or after this section.<br>
+
+Now you can add all your publications one by one. 
+Let's start with an example, and then describe each field:<p>
+
+<tt>
+&lt;publication&gt;<br>
+  &nbsp;&nbsp;&lt;key&gt;sc02&lt;/key&gt;<br>
+  &nbsp;&nbsp;&lt;type&gt;conference&lt;/type&gt;<br>
+  &nbsp;&nbsp;&lt;authors&gt;<br>
+ &nbsp;&nbsp; &nbsp;&nbsp;  Frachtenberg, Eitan and Petrini, Fabrizio and Fernandez, Juan and Pakin, Scott and Coll, Salvador<br>
+  &nbsp;&nbsp;&lt;/authors&gt;<br>
+  &nbsp;&nbsp;&lt;title&gt;STORM: Lightning-Fast Resource Management&lt;/title&gt;<br>
+  &nbsp;&nbsp;&lt;booktitle&gt;<br>
+ &nbsp;&nbsp;  &nbsp;&nbsp; IEEE/ACM Conference on Supercomputing [[a href="http://www.sc-2002.org/"]]SC'02[[/a]]<br>
+  &nbsp;&nbsp;&lt;/booktitle&gt;<br>
+  &nbsp;&nbsp;&lt;pages&gt;125--142&lt;/pages&gt;<br>
+  &nbsp;&nbsp;&lt;address&gt;Baltimore, MD&lt;/address&gt;<br>
+  &nbsp;&nbsp;&lt;month&gt;11&lt;/month&gt;<br>
+  &nbsp;&nbsp;&lt;year&gt;2002&lt;/year&gt;<br>
+  &nbsp;&nbsp;&lt;team&gt;true&lt;/year&gt;<br>
+  &nbsp;&nbsp;&lt;area&gt;Resource Management&lt;/area&gt;<br>
+  &nbsp;&nbsp;&lt;subarea&gt;STORM&lt;/subarea&gt;<br>
+&lt;/publication&gt;
+</tt>
+<p>
+
+<u>Fields description</u><p>
+<ul>
+
+<li><tt>publication</tt>: Not a field, but an indication of where a new publication entry starts (and ends).</li>
+<li><tt>key</tt>: A unique string that identifies the publication (do not use '/' in key).</li>
+<li><tt>type</tt>: Type of publication: can be for example one of: book, bookchapter, journal, conference, workshop, poster, report, talk, or thesis. You can also use any custom type of your own--see publist.ini for details.</li>
+<li><tt>authors</tt>: List of authors, separated by " and ". Names must start with the last name, followed by a comma and the rest of the name, e.g. "Roosevelt, Franklin D. and Einstein, Albert".</li>
+<li><tt>editors</tt>: For types "book" and "bookchapter". Same format at authors (optional).</li>
+<li><tt>title</tt>: The title of the paper/publication.</li>
+<li><tt>booktitle</tt>: The conference, journal, or framework where the publication was published.</li>
+<li><tt>pages</tt>: Page numbers in proceedings or journal (optional).</li>
+<li><tt>address</tt>: Location of the conference (optional, not expected for journal papers).</li>
+<li><tt>volume</tt>: Volume of journal (optional).</li>
+<li><tt>number</tt>: Journal issue number (optional).</li>
+<li><tt>month</tt>: Numeric month of publication (1-12).</li>
+<li><tt>year</tt>: Year of publication (four digits).</li>
+<li><tt>isbn</tt>: ISBN number of book (optional).</li>
+<li><tt>team</tt>: Should publication appear when using <tt>print_team()</tt> (optional, true/false).</li>
+<li><tt>area</tt>: Area/field of publication (optional).</li>
+<li><tt>subarea</tt>: Subarea/field of publication (optional).</li>
+
+</ul><p>
+
+
+<u>Notes on syntax</u><p>
+
+<ol>
+<li>Line breaks and whitespace are allowed, and will not show on output page.
+    Use specific HTML/CSS commands (such as &lt;br&gt;) to force whitespace.</li>
+<li>Some fields are optional, or interchangeable. For example, a journal
+    may not have an address and a conference may not have a volume. You can also add your own custom fields.
+    In particular area and subarea are only used for sorting and selection queries,
+    and are not shown with the publication.</li>
+<li>Order of fields is not important, as long as all the required fields appear.</li>
+<li>Fields and field headers are case sensitive</li>
+<li>HTML code can be embedded in any of the fields' text, to create hyperlinks, 
+    special formatting, etc. However, the "&lt;" and "&gt;" delimiters must be 
+    replaced with "[[" and "]]" respectively, so as not to be considered part of the XML code. 
+    An example is shown in the <tt>booktitle</tt> field above.</li>
+<li>Comments can be added to the XML file in the usual syntax, 
+    e.g. <tt>&lt;!-- This is a comment --&gt;</tt></li>
+
+<p>
+<hr WIDTH="100%">
+<a href="http://frachtenberg.org/eitan/publist" target=_top>Back to Publist's homepage</a>
+</body>
+</html>
+

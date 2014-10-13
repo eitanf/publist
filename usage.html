@@ -1,0 +1,256 @@
+
+<!-- Copyright 2003, 2004 Eitan Frachtenberg publist@etc.co.il -->
+
+<html>
+<head>
+  <title>Publist usage</title>
+</head>
+<body bgcolor="#FCFFD5">
+
+
+<center><font size=+2><u>Publist Usage</u></font></center><p><p>
+
+<center><b>CONTENTS</b><p>
+<a href=#first>First things first</a><br>
+<a href=#init>Initialization</a><br>
+<a href="#howto">How to display a publication list</a></br>
+<a href="#sorts">Sorts and jumps</a></br>
+<a href="#links">Automatic generation of links</a><br>
+<a href="#bibtex">Automatic generation of BibTeX files</a></br>
+<a href="#team">Team and individual pages</a></br>
+<a href="#query">How to create sublists by criterion</a></br>
+<a href="#bib2xml">How to Import BibTeX files</a></br>
+<a href="#reference">How to create reference lists</a></br>
+<a href="#macros">Macro (string) file</a></br>
+<a href="#tagging">Automatic 'New' tagging</a></br>
+<a href="#newtypes">How to add publication types (advanced)</a></br>
+<a href="#notes">Additional notes</a></br>
+</center>
+
+<u><a name="first">First things first</a></u><p>
+
+This page explains how to use <a href="http://publist.sourceforge.net">Publist</a> for your publications lists. 
+A list can be embedded in any HTML document, but the document must have a .php postfix, so that your 
+server will know how to handle it correctly (This assumes of course that your web server supports PHP.
+If it does not, please contact your system administrator.) 
+If you have an existing page in which you'd like to embed your lists, just change its extension from 
+".html" or whatever it is to ".php". If you prefer to forgo the instructions, or follow them with ease,
+ I suggest you have a look with an editor at the examples in the examples/ directory.<p>
+
+<u><a name="init">Initialization</a></u><p>
+
+To use Publist, you will need to instantiate (initialize) a new Publist object. 
+An example of how to do this is given in this code:<p>
+<tt>&lt;?php<br>
+require "publist.php";<br>
+$pubs = new Publist(array('papers.xml','talks.xml'), $_GET['sort'], 'macros.dat');<br>
+?&gt;</tt><p>
+The first and last line are required to delimit the PHP code from the rest of the HTML document. 
+The second line tells PHP to read the main Publist program. In the third line we initialize a new
+Publist object into a variable (called <tt>$pubs</tt> in this example, but you can choose any name you 
+like). The <tt>Publist()</tt> function takes three arguments: an array of filenames of the XML file containing 
+the publications (see <a href="format.html">XML format</a>), a sort criterion, which we'll discuss 
+in a moment, and an optional third filename for macros. This snippet of code should come at the beginning of the document, preferably right after
+the <tt> &lt;body&gt;</tt> command.<p>
+
+<p>
+
+<u><a name="howto">How to display a publication list</a></u><p>
+
+To print the entire list of publications, sorted by the current sort criterion, just call the 
+<tt>print_all()</tt> function, as shown in this example:<br>
+<tt>&lt;?php $pubs->print_all(); ?&gt;<br></tt>
+This line can be added anywhere in the document after the initialization code. Note however that 
+publications are shown in a list context, so you may want to wrap this code with <tt>&lt;UL&gt;</tt> 
+or <tt>&lt;OL&gt;</tt> commands.<br>
+In same cases you may choose to only display subsets of the publications, in which case, you'll use other functions. See below for <a href="#team">team</a> and <a href="#query">query-specific</a> lists.<p>
+
+
+<u><a name="sorts">Sorts and jumps</a></u><p>
+
+If you want to allow the viewer to sort publications by different criteria, use the 
+<tt>show_sorts ()</tt> function by adding this line at the document location where you want the sort 
+links to appear:<br>
+<tt>&lt;?php $pubs->show_sorts (); ?&gt;</tt><br>
+This function adds links to the same document, but with an additional parameter of the format 
+<tt>sort=</tt> and a sort criterion to the link. This parameter is then extracted in the 
+<tt>$_GET['sort']</tt> variable we used to initialize the publications list based on the chosen sort 
+criterion. The criterion can be one of the following:<br>
+<ul>
+<li>Type: Default sort option, sorting and grouping publications based on their type 
+(e.g. books, journal papers, conference papers, talks, etc.) 
+The sorting order of publications is determined in <tt>publist:compare_type()</tt> and can be easily i
+modified. </li>
+<li>Area: Publications are grouped by area, as defined in the area field in the XML entry.</li>
+<li>First author: Publications are grouped by the last name of the first author, shown in alphabetical 
+order. Note that this option will only show papers and not other types of publications. This behavior 
+can be easily modified in <tt>publist:print_all()</tt>.</li>
+<li>Date: This option sorts publications by date and groups them by year, starting from most recent. 
+Note that here too, only papers will be shown. This behavior can be easily modified in 
+<tt>publist:print_all()</tt>.</li>
+</ul>
+In all cases, within each group, publications are sorted by date.
+<p>
+Another feature allows you to show links that jump into different headings in the list, depending on the sort criterion. For example, sorting by year will allow jumping to any specific year that had a publication. To use this feature, call the function <tt>show_jumps (team)</tt>:<br>
+<tt>&lt;?php $pubs->show_sorts ('true'); ?&gt;<br></tt>
+The parameter team must be either 'true' or 'false', and denotes whether only team publications 'count' for categories, which is useful when displaying a <a href="team">team</a> publication page.<p>
+
+
+<u><a name="links">Automatic generation of links</a></u><p>
+
+Whenever Publist displays a publication, it searches for the following files, 
+and adds a hyperlink to each file it finds:<br>
+
+<ul>
+<li>Abstract: a (text) file with the abstract of the publication</li>
+<li>BibTeX: A BibTeX file for the publication (see also automatic generation below)</li>
+<li>The publication/paper itself</li>
+<li>Slides of a presentation/talk for the publication</li>
+<li>Source archive of the document (can include any files)</li>
+<li>Reviewers' comments</li>
+</ul>
+
+These files should be in these respective subdirectories to be found:<br>
+<tt>abstracts/   bibtex/   papers/   talks/ src/ reviews/</tt><br>
+Note that I chose to password-protect that last two directories, but you don't have to.<br>
+The filename must be prefixed by the key of the publication, e.g. for a publication with a key 
+ipdps03, the filenames may be:<br>
+<tt>abstracts/ipdps03  bibtex/ipdps03  papers/ipdps03.pdf  talks/ipdps03-slides.pdf</tt><br>
+There is no limitation on the file format.  Additional links can be added to the publication entry by 
+embedding HTML code in the XML entry, preferably in the notes section.<br>
+You can also have your subdirectories in a different parent directory from where your document is. 
+In that case, use the command <tt>&lt;?php chdir ("newdir"); ?&gt;</tt> to switch to the parent 
+directory of these subdirectories ("newdir" in this example).<p>
+
+<u><a name="bibtex">Automatic generation of BibTeX files</a></u><p>
+
+Publist will try to generate a new BibTeX file and link to them for every publication that doesn't 
+have such an entry. This requires that the <tt>bibtex/</tt> subdirectory is writable to all, so if 
+your security policy does not allow this, Publist will not create the new file. 
+(One workaround is to create the BibTeX file once, and then change permissions back to read only). 
+Even when it does succeed, Publist tries to do a reasonable job at creating the appropriate BibTeX 
+fields, but some publications will still require manual editing of the resulting file. It is 
+recommended that after invoking Publist for the first time to create the missing files, you go over 
+them and make any corrections yourself. Similarly, if you make changes to the XML data and want Publist to regenerate the BibTeX file, you should remove or move the old BibTeX file.<p>
+
+
+<u><a name="team">Team and individual pages</a></u><p>
+
+Publist allows the displaying of both individual and team publication lists from the same data files. A team publication page can read in all the individual publications files (e.g., each user has their own file), and present those publications that are chosen for the team page by setting the <tt>&lt;team&gt;</tt> tag to true. To accomplish this, use <tt>print_team</tt> from the team's page, which only selects the appropriate publications (don't forget to also use <tt>show_jumps('true')</tt> in this case).<br>
+An individual's page on the other hand would typically only read the individual's publication XML file at initialization, and then use <tt>print_all</tt>, so that publications with <tt>team</tt> set to false will also be displayed.<p>
+
+
+<u><a name="query">How to create sublists by criterion</a></u><p>
+
+To create a publication sublist anywhere in the document (after initialization), 
+just add a line like:<br>
+<tt>&lt;?php $pubs->print_select ("area", "Parallel Job Scheduling"); ?&gt;</tt><br>
+This example will show all the publications whose area equals "Parallel Job Scheduling". 
+You can similarly use it to select all the publications whose year equals 2003, or those whose first 
+author equals "Denver, John", etc.<br>
+A more powerful option is given with print_select_generic, which accepts a function name as a 
+parameter. This function should receive a publication (of class Publication), and return TRUE iff this 
+publication should be selected. The following snippet demonstrates how to use this function to select 
+all the publications where John Doe is one of the authors:<br>
+<tt>&lt;?php<br>
+function get_john ($p) { return in_array ("Doe, John", $p->authors); }<br>
+$pubs->print_select_generic ("get_john");<br>
+?></tt>
+<p>
+The publications are again in a list context, so you may want to wrap this code with 
+<tt>&lt;UL&gt;</tt> or <tt>&lt;OL&gt;</tt> commands.<p>
+
+
+<u><a name="bib2xml">How to Import BibTeX files</a></u><p>
+
+As of version 1.1, Publist includes a Perl script (bib2xml.pl) that converts most types of simple
+BibTeX entries to XML format readable by Publist. Using the script is straightforward: give it
+a list of .bib files, and it will output one XML file to standard output, in the same order of the
+BibTeX entries.
+bib2xml understands BibTeX @Strings and can parse BibTeX entries almost as good as BibTeX itself, but
+cannot do much about entries that Publist doesn't support. Those will be embedded in the output as
+comments. It is advised that after running bib2xml, you visually inspect the output file and make
+any corrections or additions, including additional hyperlinks.
+To learn more about bib2xml's features, read the first page of the file bib2xml.pl. Note that
+bib2xml requires that the Perl module Text::BibTeX be installed (it can be downloaded from
+<a href="http://search.cpan.org/~gward/Text-BibTeX-0.34/BibTeX.pm">CPAN</a>).<br>
+
+<b>Caveat</b> There are two bugs I've recently found in BibTeX.pm, both are annoying but easy to overcome: problems parsing the second BibTeX entry and crashing right before the end. For more information, read the first page of bib2xml.pl
+<p>
+
+
+<u><a name="reference">How to create reference lists (citations)</a></u><p>
+
+Citations have two parts: the citation itself, which can be placed anywhere in the document, and the 
+full list of references, which should come after all citations (typically at the end of the document). 
+For citing a paper, use the <tt>cite</tt> command with a comma-separated list of publication keys, 
+as in this example:<br>
+<tt>&lt;?php $pubs->cite("jsspp03,sc02 , design ") ?&gt;</tt><br>
+To create the references list, just call the <tt>print_refs()</tt> function. You would typically want 
+references to be numbered, so use the HTML <tt>&lt;OL&gt;</tt> command, as in this example:<br>
+<tt>
+  &lt;OL&gt; &lt;?php $pubs->print_refs(); ?&gt; &lt;/OL&gt;<br>
+</tt>
+<p>
+
+
+<u><a name="macros">Macro (string) file</a></u><p>
+
+As of version 1.2, Publist supports a macro file, that works similar to BibTeX's @string. To use it, simply create a plaintext file for your macros. Each line contains two fields, separated by a tab. The first field is the macro name, and the second is the string that replaces it. For examples, look at my own <a href="http://www.cs.huji.ac.il/~etcs/pubs/macros.dat">macro file</a> (Also in the examples/ directory).<p>
+
+
+<u><a name="tagging">Automatic 'New' tagging</a></u><p>
+
+Publist can prepend a small "New" picture to those publications that appeared within the last n
+months (or the future), where n is a parameter and defaults to 6. To change this parameter, modify
+the <tt>new_months</tt> default value in publist.php (using -1 will disable this feature). If you use 
+this feature, make sure you have a readable file called new.gif in the parent publication directory of 
+appropriate size (one is included with Publist).
+Note that when using <tt>print_refs()</tt> or <tt>print_select()</tt> their default behavior is to
+use -1 as the "new" parameter, or in other words, the feature is disabled in those modes. If you want
+to restore it, replace the -1 in those functions with <tt>$this-&gt;new_months</tt> <p>
+
+
+<u><a name="newtypes">How to add publication types (advanced)</a></u><p>
+
+To add additional types, or to change the behavior/definition of current types, you will be
+required to change publist.php, and possibly pub.php. In the former, the first two things
+to look for are the <tt>$type_header</tt> variable, and the <tt>compare_type</tt> function (for sorting). 
+These are also good places to look to find the currently-supported types. If you need to change
+the behavior of any particular type (e.g. treat periodical articles as papers), search in
+those two files for the type you want to change, and if applicable, search also for the type
+whose behavior you want to mimic. Most likely, the changes will be trivial.<p>
+
+
+<u><a name="notes">Additional notes</a></u></p>
+
+<ul>
+<li>
+  The book and bookchapter type can also take an additional field, &lt;editors&gt;, which has the
+  same format as <authors>. This field can come in addition or in lieu of the authors field,
+  or not at all. Either way, Publist will try to format it intelligently on the HTML output.
+</li>
+<li>
+  Publications in the future will automatically have the text 'To appear' tagged to them. Note that publications this year with no month are considered in the future as well.
+</li>
+<li>
+  As of version 1.0a, the "workshop" type is grouped together with the conference type, and
+  the "periodical" type is grouped together with "journal". If however you wish to restore
+  version 1.0 functionality (i.e. separate display), You need to change up to three functions
+  in publist.php: <tt>show_jumps, print_header, and compare_type</tt>. In all places I've 
+  left comments for changing it back.
+</li>
+</ul>
+
+<u>What if I want something else?</u><p>
+
+For any questions, feature requests, bug reports, and comments, by all means, do write me
+at a <href="mailto:publist@etc.co.il">publist@etc.co.il</a><p>
+
+<p>
+<hr WIDTH="100%">
+<a href="http://publist.sourceforge.net/" target=_top>Back to Publist's homepage</a>
+</body>
+</html>
+
+

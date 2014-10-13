@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# Convert BibTeX files to Publist's XML format (http://publist.sf.net/)
+# Convert BibTeX files to Publist's XML format (https://github.com/eitanf/publist)
 #
 # This script tries to parse BibTeX file(s) (provided as command line 
 # parameters) and produce one file in XML format (on standard output) 

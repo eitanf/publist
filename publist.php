@@ -264,7 +264,7 @@ class Publist {
     ################################################
     ///// Actually print the credits
     function get_link_home() {
-        return  '<small><a class="link_home" href="http://publist.sf.net/">Publist</a> '
+        return  '<small><a class="link_home" href="https://github.com/eitanf/publist">Publist</a> '
             .'v. <a href="http://sf.net/projects/publist/">'. PUBLIST_VERSION ."</a></small>\n"
             ."<!-- Generated automatically with Publist (c) 2003-2014 version "
             .PUBLIST_VERSION.", by Eitan Frachtenberg (publist@frachtenberg.org) -->\n";
