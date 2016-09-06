@@ -1,7 +1,7 @@
 <?php
 /*
  *  Publication object, handles an individual publication
- *  Copyright 2003--2014 by Eitan Frachtenberg (publist@frachtenberg.org)
+ *  Copyright 2003--2016 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 
@@ -37,7 +37,7 @@ class Publication {
     ################################################
     ///// Constructor from field-array and configuration data
 
-    function Publication (&$aa, &$config) {
+    function __construct (&$aa, &$config) {
         foreach ($aa as $korig=>$v) {
             $k = strtolower($korig);
             $s = str_replace ("[[", '<', $v);
@@ -95,7 +95,7 @@ class Publication {
     // $config    PubConfig object    configuration data used to format the reference
     // $overrides array (optional)    manually override some formatting (for use by PubAdmin)
     function print_pub (&$config, $overrides=array()) {
-        $format =& $config->get_formatting($overrides);
+        $format = $config->get_formatting($overrides);
 
         echo $format['itemstart']."\n";
         if (isset ($format['linkid'])) {
@@ -245,7 +245,7 @@ class Publication {
     // $config    PubConfig object    configuration data used to format the reference
     // $overrides array (optional)    manually override some formatting (for use by PubAdmin)
     function print_links (&$config, $overrides=array()) {
-        $format =& $config->get_formatting($overrides);
+        $format = $config->get_formatting($overrides);
 
         // First store all links' HTML code in $links:
         $links = array();
@@ -285,7 +285,7 @@ class Publication {
     // $config    PubConfig object    configuration data used to format the reference
     // $overrides array (optional)    manually override some formatting (for use by PubAdmin)
     function print_file ($fileclass, &$config, $overrides=array()) {
-        $format =& $config->get_formatting($overrides);
+        $format = $config->get_formatting($overrides);
         $dirprefix = isset($format['dir_prefix']) ? $format['dir_prefix'] : '';
         $dir = $config->get_file_dir($fileclass);
         if (substr($dir, -1) != DIRECTORY_SEPARATOR) $dir .= DIRECTORY_SEPARATOR;
