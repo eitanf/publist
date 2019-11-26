@@ -1,7 +1,7 @@
 <?php
 /*
  *  Publication object, handles an individual publication
- *  Copyright 2003--2016 by Eitan Frachtenberg (publist@frachtenberg.org)
+ *  Copyright 2003--2019 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 
@@ -123,8 +123,7 @@ class Publication {
                  '@&(cent|#162);@i',
                  '@&(pound|#163);@i',
                  '@&(copy|#169);@i',
-                 '@&#(\d+);@e',
-                 '@<a=.*>(.*)</a>@i');                    // evaluate as php
+                 '@<a=.*>(.*)</a>@i');
 
         $replace = array ('',
                   '',
@@ -138,7 +137,6 @@ class Publication {
                   chr(162),
                   chr(163),
                   chr(169),
-                  'chr(\1)',
                   '\\1');
 
         $ret = preg_replace ($search, $replace, $str);
@@ -309,8 +307,8 @@ class Publication {
     // Returns string with BibTeX entry
     function create_bibtex_entry() {
         $ret = "";  // Return value
-        $months = array('1' => "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
-        "JUL", "AUG", "SEP", "OCT", "NOV", "DEC");
+        $months = array('1' => "jan", "feb", "mar", "apr", "may", "jun",
+        "jul", "aug", "sep", "oct", "nov", "dec");
 
         //  Type string for publication:
         $ret .= $this->type->get_bibtex();
@@ -363,7 +361,7 @@ class Publication {
         if ($this->get ("month") != "") {
             $ret .= "\tmonth =\t{$months[$this->get ("month")]},\n";
         }
-        $ret .= "\tyear =\t{" . $this->get ("year") . "},\n";
+        $ret .= "\tyear =\t" . $this->get ("year") . ",\n";
 
         // Notes:
         if ($this->get ("note") != "") {

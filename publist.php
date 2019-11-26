@@ -1,7 +1,7 @@
 <?php
 /*
  *  Publist: Object for list of publications
- *  Copyright 2003--2014 by Eitan Frachtenberg (publist@frachtenberg.org)
+ *  Copyright 2003--2019 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 
