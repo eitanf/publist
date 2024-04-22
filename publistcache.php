@@ -103,7 +103,7 @@ class PublistCache {
     // macrofn: Filename of macros for pubs (can be null)
     // configfn: Local configuration .ini filename
 
-    function PublistCache ($filenames, $insort, $macrofn, $configfn="publist.ini") {
+    function __construct ($filenames, $insort, $macrofn, $configfn="publist.ini") {
         $this->insort    = $insort;
         $this->filenames = $filenames;
         $this->macrofn   = $macrofn;

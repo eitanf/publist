@@ -41,7 +41,7 @@ class PubConfig {
     // After reading that file, successfully or not, it tries to read
     // a local file, as passed by the parameter PubConfig
 
-    function PubConfig ($filename) {
+    function __construct ($filename) {
         $got_ini = false;
 
         // Try to read global .ini file

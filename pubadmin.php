@@ -58,7 +58,7 @@ class PubAdmin {
     // $publistini  string  path & filename of ini file with which to initialise the Publist class
     // $adminini    string  path & filename of ini file with which to initialise this class
     // Both ini files are located relative to $basepath
-    function PubAdmin ($basepath, $files, $publistini='', $adminini='') {
+    function __construct ($basepath, $files, $publistini='', $adminini='') {
         // make sure the path ends with the directory separator (/ on unix)
         if (substr($basepath, -1) != DIRECTORY_SEPARATOR) {
             $basepath .= DIRECTORY_SEPARATOR;

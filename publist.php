@@ -36,7 +36,7 @@ class Publist {
     // macrofn: Filename of macros for pubs (can be null)
     // configfn: Local configuration .ini filename
 
-    function Publist ($filenames, $insort, $macrofn, $configfn="publist.ini", $baseurl = "") {
+    function __construct ($filenames, $insort, $macrofn, $configfn="publist.ini", $baseurl = "") {
         $this->read_macros ($macrofn);
         $this->config = new PubConfig ($configfn);
         $this->pubs = $this->read_from_files ($filenames);

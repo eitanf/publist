@@ -271,7 +271,7 @@ class Publication {
         // Now, output links:
         if (count ($links)) {
             echo $format['linkstart']
-            .join($links, $format['linkseparator'])
+            .join($format['linkseparator'], $links)
             .$format['linkstop']."\n";
         }
     }

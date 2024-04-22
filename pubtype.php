@@ -28,7 +28,7 @@ class PubType {
 
     ################################################
     ///// Constructor for PubType
-    function PubType ($name, $head, $pri=10, $glob='', $doc='', $pres='', $form='', $bibtex = "") {
+    function __construct ($name, $head, $pri=10, $glob='', $doc='', $pres='', $form='', $bibtex = "") {
         $this->name      = $name;
         $this->header    = $head;
         $this->priority  = $pri;
