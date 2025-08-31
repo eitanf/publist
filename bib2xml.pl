@@ -31,7 +31,7 @@
 # Requires package Text::BibTeX
 #    (http://search.cpan.org/~gward/Text-BibTeX-0.34/BibTeX.pm)
 #
-# Copyright 2005--2019 by Eitan Frachtenberg (publist@frachtenber.org) -- BETA status --
+# Copyright 2005--2025 by Eitan Frachtenberg (publist@frachtenber.org) -- BETA status --
 # This program may be freely distributed under the terms of the GNU Public License
 ###############################################################################
 

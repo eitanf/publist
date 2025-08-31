@@ -1,7 +1,7 @@
 <?php
 /*
  *  Publist: Object for list of publications
- *  Copyright 2003--2019 by Eitan Frachtenberg (publist@frachtenberg.org)
+ *  Copyright 2003--2025 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 
@@ -11,7 +11,7 @@ require_once 'pubconfig.php';
 // Publist class stores an array of Publication-class elements, as well
 // as presentation supplementary information (configuration, citations, etc.)
 
-define('PUBLIST_VERSION', '2.0');       // publist version
+define('PUBLIST_VERSION', '2.0.1');       // publist version
 
 class Publist {
     var $pubs = array();    // Publication list
@@ -70,7 +70,7 @@ class Publist {
         $fin = @fopen ($filename, "r");
         if (!$fin)
             return;
-        while (($buf = fgetcsv ($fin, 500, "\t"))) {
+        while (($buf = fgetcsv ($fin, 500, "\t", '"', "\\"))) {
             $macro = "@\b$buf[0]\b@";
             if (isset ($buf[1])) {
                 $this->macros[$macro] = $buf[1];
@@ -109,9 +109,9 @@ class Publist {
                     $p = $this->parse_pub (array_slice ($values, $offset, $len));
 
                     if (!$p->key)       // Verify key is defined
-                        die ("Publication with title '" . $p->data['title'] . "' has no key!\n");
+                        throw new Exception ("Publication with title '" . $p->data['title'] . "' has no key!\n");
                     elseif (isset ($tdb[$p->key])) // Check for repeated keys
-                        die ("Key '" . $p->key . "' is repeated!\n");
+                        throw new Exception ("Key '" . $p->key . "' is repeated!\n");
                     else
                         $tdb[$p->key] = $p;
                     }
@@ -265,8 +265,8 @@ class Publist {
     ///// Actually print the credits
     function get_link_home() {
         return  '<small><a class="link_home" href="https://github.com/eitanf/publist">Publist</a> '
-            .'v. <a href="http://sf.net/projects/publist/">'. PUBLIST_VERSION ."</a></small>\n"
-            ."<!-- Generated automatically with Publist (c) 2003-2014 version "
+            ."v. ". PUBLIST_VERSION. "</small>\n"
+            ."<!-- Generated automatically with Publist (c) 2003-2025 version "
             .PUBLIST_VERSION.", by Eitan Frachtenberg (publist@frachtenberg.org) -->\n";
     }
 

@@ -455,7 +455,7 @@ class PubAdmin {
             $configured = true;
         }
         if (! $configured) {
-            die ("Critical error: cannot find any readable configuration file in $globalini or $inifile\n");
+            throw new Exception ("Critical error: cannot find any readable configuration file in $globalini or $inifile\n");
         }
     }
 

@@ -194,7 +194,7 @@ class PublistCache {
         // to be parsed in order to fulfill this request, but it would require code
         // duplication from pub.php into here unless there were a way of calling
         // that section of pub.php as a static function
-        die ("I can't do that in offline mode... please use Publist not PublistCache");
+        throw new Exception ("I can't do that in offline mode... please use Publist not PublistCache");
     }
 
     ################################################

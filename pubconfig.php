@@ -1,7 +1,7 @@
 <?php
 /*
  *  PubConfig: Object for Publist's configuration management
- *  Copyright 2005--2019 by Eitan Frachtenberg (publist@frachtenberg.org)
+ *  Copyright 2005--2025 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 
@@ -67,7 +67,7 @@ class PubConfig {
         }
 
         if (!$got_ini)
-            die ("Critical error: cannot find any readable configuration file in $globfn or $filename\n");
+            throw new Exception ("Critical error: cannot find any readable configuration file in $globfn or $filename\n");
 
         $this->parse_types ();
         $this->parse_sorts ();
@@ -87,7 +87,7 @@ class PubConfig {
             $types = preg_replace ('/^Type_(.+)/', '$1', $types);
         }
         if (! count($types))
-            die ("Critical error: no types defined in configuration file\n");
+            throw new Exception ("Critical error: no types defined in configuration file\n");
 
         $default_format = "";
         if (isset($this->options['Formatting']['default_format'])
@@ -115,10 +115,10 @@ class PubConfig {
                     echo ("Cannot find type $other before type $type. ");
                     echo ("Types found so far are: \n");
                     print_r ($this->types);
-                    die ();
+                    throw new Exception ();
                 }
                 if (isset ($pdata["priority"]) && $pdata["priority"] != $this->types[$other]->priority)
-                    die ("Priority of type $type (" . $pdata["priority"]
+                    throw new Exception ("Priority of type $type (" . $pdata["priority"]
                     . ") is different than that of globbed type $other (" . $this->types[$other]->priority . ")");
 
                 $header = $this->types[$other]->header;
@@ -126,12 +126,12 @@ class PubConfig {
             }
             else {  // Unglobbed types:
                 if (!isset ($pdata["header"]))
-                    die ("Type $type needs a header\n");
+                    throw new Exception ("Type $type needs a header\n");
                 else
                 $header = $pdata["header"];
 
                 if (!isset ($pdata["priority"]))
-                    die ("Type $type needs a header\n");
+                    throw new Exception ("Type $type needs a header\n");
                 else
                     $priority = $pdata["priority"];
             }
@@ -170,7 +170,7 @@ class PubConfig {
     function parse_sorts () {
         $sorts = preg_split ('/\s+/', $this->options['Meta_Sorts']['order']);
         if (!$sorts)
-            die ("Critical error: no sorts defined in configuration file\n");
+            throw new Exception ("Critical error: no sorts defined in configuration file\n");
         else {
             $this->sort_names = array();
         }
@@ -182,9 +182,9 @@ class PubConfig {
 
             // Sanity checks:
             if ($sdata["name"] == "")
-                die ("Sort $sort doesn't have a name field\n");
+                throw new Exception ("Sort $sort doesn't have a name field\n");
             if ($sdata["field_order"] == "")
-                die ("Sort $sort doesn't have a field_order string\n");
+                throw new Exception ("Sort $sort doesn't have a field_order string\n");
 
             // Figure out types:
             if (!isset ($sdata["types"]) || preg_match ('/\*/', $sdata["types"])) { // All types:
@@ -250,7 +250,7 @@ class PubConfig {
 
         $tmp = explode (" ", $this->options["Content"]["months"]);
         if (count ($tmp) != 12)
-            die ("Need 12 month names, and instead I found" . count ($tmp));
+            throw new Exception ("Need 12 month names, and instead I found" . count ($tmp));
 
         for ($i = 1; $i <= 12; $i++)
             $this->months[$i] = array_shift ($tmp);
@@ -278,7 +278,7 @@ class PubConfig {
         if (isset ($this->types[$type]))
             return $this->types[$type];
         else
-            die ("Type $type not found in configuration data");
+            throw new Exception ("Type $type not found in configuration data");
     }
 
     ################################################
@@ -369,7 +369,7 @@ class PubConfig {
     ///// get_month_name: Return string name of a month number
     function get_month_name ($month) {
         if (!is_numeric ($month) || ($month < 1) || ($month > 12))
-            die ("Month $month needs to be number between 1--12\n");
+            throw new Exception ("Month $month needs to be number between 1--12\n");
 
         return $this->months[$month];
         }

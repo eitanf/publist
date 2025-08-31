@@ -1,7 +1,7 @@
 <?php
 /*
  *  PubType: Object for Publication types
- *  Copyright 2005--2019 by Eitan Frachtenberg (publist@frachtenberg.org)
+ *  Copyright 2005--2025 by Eitan Frachtenberg (publist@frachtenberg.org)
  *  This program is distributed under the terms of the GNU General Public License
  */
 
@@ -145,7 +145,7 @@ class PubType {
                             $namstr .= preg_replace ("/%$attrib%/i", $n, $elem);
                         }
                     } else {
-                        die ("Invalid author format string element $elem or missing name part in $a\n");
+                        throw new Exception ("Invalid author format string element $elem or missing name part in $a\n");
                     }
                 }
             }

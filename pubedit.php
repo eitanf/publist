@@ -58,7 +58,7 @@ class PubEdit {
     // $sort         string     sort order to use when creating the Publist object
     // $admin_config array      parsed ini file as created by PubAdmin
     // $publist_ini  string     filename (relative to $basepath) for the local ini file for Publist
-    function PubEdit ($basepath, $filename, $sort='unsorted', &$admin_config, $publistini='') {
+    function __construct ($basepath, $filename, $sort='unsorted', &$admin_config, $publistini='') {
         // ensure that the path finishes with the directory separator (/)
         // so that it can be concatenated with paths and filenames.
         if (substr($basepath, -1) != DIRECTORY_SEPARATOR) {
