@@ -65,15 +65,21 @@ class Publist {
 
     ################################################
     ///// Read macros from macro file:
-    // Macro file should have two entries per line, separated by one tab
+    // Macro file should have two entries per line, separated by tab or multiple spaces
     function read_macros ($filename) {
         $fin = @fopen ($filename, "r");
         if (!$fin)
             return;
-        while (($buf = fgetcsv ($fin, 500, "\t", '"', "\\"))) {
-            $macro = "@\b$buf[0]\b@";
-            if (isset ($buf[1])) {
-                $this->macros[$macro] = $buf[1];
+        while (($line = fgets ($fin)) !== false) {
+            $line = trim($line);
+            // Skip empty lines and comments
+            if (empty($line) || $line[0] == '#') {
+                continue;
+            }
+            // Split on whitespace: macro name (any non-whitespace) followed by whitespace and definition
+            if (preg_match('/^(\S+)\s+(.+)$/', $line, $matches)) {
+                $macro = "@\b" . $matches[1] . "\b@";
+                $this->macros[$macro] = $matches[2];
             }
         }
         fclose ($fin);
